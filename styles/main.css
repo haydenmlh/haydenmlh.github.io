@@ -21,15 +21,17 @@
     }
     
     #content {
-        min-width: 600px;
-        width: 60%;
+        width: min(95vw, 500px);
     }
     
     footer {
         flex-shrink: 0;
-        margin: 0 0 5pt 0;
-        min-width: 600px;
-        width: 60%;
+        margin: 0 0 5px 0;
+        width: min(95vw, 500px);
+    }
+
+    footer p {
+        margin: 0 0 0 10px;
     }
     
     footer p::before {
@@ -144,5 +146,15 @@
 @media (min-width: 500px) {
     nav{
         min-width: 500px;
+    }
+
+    #content {
+        min-width: 600px;
+        width: 70%;
+    }
+
+    footer {
+        min-width: 600px;
+        width: 70%;
     }
 }
