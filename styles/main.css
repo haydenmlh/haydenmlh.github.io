@@ -1,11 +1,16 @@
 @media (min-width: 200px) {     /* for general stylings (all screens) */
+    html, body {
+        height: 100%
+    }
+    
     body {
         margin: 0;
         font-family: 'Source Sans Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
     }
 
     /* Header CSS */
-
     header {
         background: #1d2731;
         padding: 5px 0 0 0px;
@@ -68,8 +73,21 @@
         text-align: center;
     }
 
+    .content {
+        flex: 1 0 auto;
+    }
+
+    p {
+        margin: auto auto auto 15px;
+    }
+
     footer {
-        margin: 0 0 0 15px;
+        flex-shrink: 0;
+        margin: 0 0 5pt 0;
+    }
+
+    footer p::before {
+        content: "© 2021 Hayden Mak";
     }
 
 } 
