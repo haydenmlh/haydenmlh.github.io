@@ -5,26 +5,33 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/main.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/scripts/main.js"></script>
     </head>
     <body>
+        <div id="pre-footer">
+            <header>
+                <nav>
+                    <div class="buttons" id="buttons">
+                        <h1 id="header-name">Hayden Mak</h1>
+                        <a id="current" href="/index.html" class="nav-link">Home</a></li>
+                        <a href="/photography/index.html" class="nav-link">Photography</a></li>
+                        <a href="/blog/index.html" class="nav-link">Blog</a></li>
+                        <a href="/contact.html" class="nav-link">Contact</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <div id="divider"></div>
 
-        <div class="content">
-        <header>
-            <nav>
-                <h1 class="noselect" id="header-name">Hayden Mak</h1>
-                <ul>
-                    <li id="current"><a href="/index.html" class="nav-link">Home</a></li>
-                    <li><a href="/photography/index.html" class="nav-link">Photography</a></li>
-                    <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
-                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <h1 id="welcome-msg">Welcome to my site!</h1>
-        <p>My website is getting better! I enjoy photography a lot, check out the photography section!</p>
-        <p><a href="https://www.linkedin.com/in/haydenmlh/">My LinkedIn</a></p>
-        </div>
+            <div id="content">
+                <h1 id="welcome-msg">Welcome to my site!</h1>
+                <p>My website is getting better! I enjoy photography a lot, check out the photography section!</p>
+            </div>
+        </div>        
 
         <footer><p></p></footer>
     </body>
