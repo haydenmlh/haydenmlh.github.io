@@ -1,2 +1,3 @@
 # haydenmlh.github.io
- My Website Attempt
+ Personal website coded from scratch.
+ Uses HTML, CSS at the moment.
