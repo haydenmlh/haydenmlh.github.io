@@ -1,4 +1,4 @@
-@media (min-width: 320px) {     /* for general stylings (all screens) */
+@media (min-width: 200px) {     /* for general stylings (all screens) */
     body {
         margin: 0;
         font-family: 'Source Sans Pro', sans-serif;
@@ -10,6 +10,16 @@
         background: #1d2731;
         padding: 5px 0 0 0px;
         margin: 0;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome, Edge, Opera and Firefox */
     }
 
     nav {
@@ -29,7 +39,7 @@
 
     nav ul {
         margin: 0;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 5px;
         display: inline;
     }
 
@@ -39,50 +49,27 @@
         display: inline-block;
         list-style-type: none;
         padding: 5px 15px 3px 15px;
+        margin: 0px 1px;
         font-family: 'Fira Sans Condensed', sans-serif;
     }
     
     .nav-link {
         color: white;
+        text-decoration: none;
     }
 
     #current {
         background: #328cc1;
     }
 
-    /* Header CSS END*/
+    /* Header CSS end */
 
-
-    .row {
-
-    }
-
-    .row:after {
-        clear: both;
-        content: " ";
-        display: table;
-    }
-
-    .col {
-        background: rgb(216, 216, 216);
-        float: left;
-        width: 31%;
-        margin: .5%;
-        padding: 10px .5%;
+    #welcome-msg {
+        text-align: center;
     }
 
     footer {
-        clear: both;
-    }
-
-    .noselect {
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently
-                            supported by Chrome, Edge, Opera and Firefox */
+        margin: 0 0 0 15px;
     }
 
 } 
