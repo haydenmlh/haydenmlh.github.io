@@ -87,7 +87,7 @@
         color: white;
         text-decoration: none; /* No underline for links */
         display: inline-block;
-        padding: 6px 15px 6px 15px;
+        padding: 8px 15px 4px 15px;
         border-width: 0;
         margin: 0 2px 0 0;
         font-family: 'Fira Sans Condensed', sans-serif;
@@ -132,7 +132,7 @@
         float: left;
         display: block;
         padding: 6px 15px 6px 15px;
-        margin: 0;
+        margin: 0 5px 0 0;
     }
 
     .buttons h1 {
@@ -145,7 +145,11 @@
     }
     
     .buttons.responsive {position: relative;}
-    .buttons.responsive a.spacer {display: block;}
+    .buttons.responsive a.spacer {
+        display: block;
+        background: #1d2731;
+        color: #1d2731;
+    }
     .buttons.responsive a.icon {
         position: absolute;
         left: 0;
@@ -165,16 +169,16 @@
 
 @media (min-width: 500px) {
     nav{
-        min-width: 500px;
+        min-width: min(100%, 500px);
     }
 
     #content {
-        min-width: 600px;
+        min-width: min(95%, 500px);
         width: 70%;
     }
 
     footer {
-        min-width: 600px;
+        min-width: min(95%, 500px);
         width: 70%;
     }
 }
