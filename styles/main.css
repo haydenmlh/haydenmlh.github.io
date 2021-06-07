@@ -1,79 +1,97 @@
-body {
-    margin: 0;
+@media (min-width: 320px) {     /* for general stylings (all screens) */
+    body {
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    /* Header CSS */
+
+    header {
+        background: #1d2731;
+        padding: 5px 0 0 0px;
+        margin: 0;
+    }
+
+    nav {
+        margin:0;
+        padding: 0;
+    }
+
+    header h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 5px 0 0 10px;
+        padding: 2px 6px 0 6px;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #1D2731;
+        background: white;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 0 0 15px;
+        display: inline;
+    }
+
+    nav ul li {
+        background: #083c5d;
+        color: white;
+        display: inline-block;
+        list-style-type: none;
+        padding: 5px 15px 3px 15px;
+        font-family: 'Fira Sans Condensed', sans-serif;
+    }
+    
+    .nav-link {
+        color: white;
+    }
+
+    #current {
+        background: #328cc1;
+    }
+
+    /* Header CSS END*/
+
+
+    .row {
+
+    }
+
+    .row:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+    .col {
+        background: rgb(216, 216, 216);
+        float: left;
+        width: 31%;
+        margin: .5%;
+        padding: 10px .5%;
+    }
+
+    footer {
+        clear: both;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome, Edge, Opera and Firefox */
+    }
+
+} 
+@media (max-width: 767px) {} /* for only styles between 320px and 768px (most mobile devies) */
+@media (min-width: 768px) {}  /* general desktop && tablet styles if needed */
+@media (min-width: 768px) and (max-width: 1024px) {} /* only tablet styles */
+@media (min-width: 1025px) {/* only desktop styling */
+
+
+    
+
 }
-
-/* Header CSS */
-
-header {
-    background: #1d2731;
-    padding: 5px 0 0 0px;
-    margin: 0;
-}
-
-nav {
-    margin:0;
-    padding: 0;
-}
-
-header h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 5px 0 0 10px;
-    padding: 2px 6px 0 6px;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #1D2731;
-    background: white;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0 0 0 15px;
-    display: inline;
-}
-
-nav ul li {
-    background: #083c5d;
-    color: white;
-    display: inline-block;
-    list-style-type: none;
-    padding: 5px 15px 3px 15px;
-}
-
-nav ul li a {
-    color: white;
-}
-
-/* Header CSS END*/
-
-
-.row {
-
-}
-
-.row:after {
-    clear: both;
-    content: " ";
-    display: table;
-}
-
-.col {
-    background: rgb(216, 216, 216);
-    float: left;
-    width: 31%;
-    margin: .5%;
-    padding: 10px .5%;
-}
-
-footer {
-    clear: both;
-}
-
-.noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-  }
