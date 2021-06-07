@@ -1,4 +1,4 @@
-@media (min-width: 200px) {     /* for general stylings (all screens) */
+@media (min-width: 50px) {     /* for general stylings (all screens) */
     /* Start of vertical table */
     
     .row {
@@ -31,15 +31,9 @@
 
     /* End of vertical table */
 } 
-@media (max-width: 767px) { /* for only styles between 320px and 768px (most mobile devies) */
+@media (max-width: 499px) { /* for only styles between 320px and 768px (most mobile devies) */
 
 } 
-@media (min-width: 768px) { /* general desktop && tablet styles if needed */
-
-}  
-@media (min-width: 768px) and (max-width: 1024px) { /* only tablet styles */
-
-} 
-@media (min-width: 1025px) {/* only desktop styling */
+@media (min-width: 500px) { /* general desktop && tablet styles if needed */
 
 }

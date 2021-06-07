@@ -1,4 +1,4 @@
-@media (min-width: 200px) {     /* for general stylings (all screens) */
+@media (min-width: 50px) {     /* for general stylings (all screens) */
     html, body {
         height: 100%
     }
@@ -75,30 +75,33 @@
         color: #d9b310;
     }
 
-    div.buttons {
+    .buttons {
         margin: 0;
         padding: 0;
         display: inline;
         width: 100%;
     }
 
-    div.buttons a {
+    .buttons a {
         background: #083c5d;
         color: white;
-        text-decoration: none;
+        text-decoration: none; /* No underline for links */
         display: inline-block;
-        list-style-type: none;
-        padding: 5px 15px 3px 15px;
+        padding: 6px 15px 6px 15px;
         border-width: 0;
         margin: 0 2px 0 0;
         font-family: 'Fira Sans Condensed', sans-serif;
     }
 
-    div.buttons a:hover {
+    .buttons a.spacer {
+        display: none;
+    }
+
+    .buttons a:hover {
         background: #095d92;
     }
 
-    div.buttons a.current {
+    .buttons a.current {
         background: #2279ac;
         border-style: solid;
         pointer-events: none;
@@ -120,19 +123,32 @@
     /* Header CSS end */
 
 } 
+
+
+
 @media (max-width: 499px) {
     .buttons a:not(.current) {display: none;}
     .buttons a.icon {
-        float: right;
+        float: left;
         display: block;
         padding: 6px 15px 6px 15px;
         margin: 0;
     }
+
+    .buttons h1 {
+        float: right;
+        display: block;
+    }
+    .buttons.responsive h1 {
+        float: right;
+        display: block;
+    }
     
     .buttons.responsive {position: relative;}
+    .buttons.responsive a.spacer {display: block;}
     .buttons.responsive a.icon {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         margin: 0;
     }
@@ -144,6 +160,8 @@
     }
 
 }
+
+
 
 @media (min-width: 500px) {
     nav{
