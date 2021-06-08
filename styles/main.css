@@ -83,6 +83,7 @@
         white-space: nowrap;
         color: #d9b310;
         font-size: 24px;
+        line-height: 29px;
     }
 
     nav a {
@@ -174,7 +175,6 @@
         order: 3;
         margin-left: auto;
         flex-shrink: 1;
-        line-height: 29px;
         padding: 0 10px;
     }
     
@@ -219,7 +219,7 @@
         grid-area: fifth;
         display:block;
     }
-
+    /* Responsive Change end */
 }
 
 

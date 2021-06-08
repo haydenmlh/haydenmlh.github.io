@@ -1,51 +1,79 @@
 @media (min-width: 50px) {     /* for general stylings (all screens) */
     h1 {
         text-align: center;
+        margin: 10px 0 10px;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
     }
 
     .project-display {
-        margin: 0px 15px 10px 15px;
+        margin: 0;
         display: flex;
+        margin: 0 auto;
         flex-wrap: wrap;
+        width: min(100%, 1200px);
     }
 
     .tile {
         background: rgb(216, 216, 216);
         float: left;
-        position: relative;
-        width: 31%;
-        margin: 7px 2% 7px 0;
-        height: 0;
-        padding: 31% 0 0 0;
+        width: calc(min(100%, 1200px)/2 - 30px);
+        margin: 0 10px 12px 0;
+        padding: 10px 10px;
     }
 
     .tile-content {
-        width: 90%;
-        height: 90%;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
-        margin: 5% 5%;
+        z-index: 999;
+    }
+    
+    .tile-title {
+        padding: 2px 0 0 0;
+        margin: 0;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+    }
+
+    .tile-description {
+        padding: 0 0 0 0;
+        margin: 0;
+        position: relative;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
     }
 
     /* End of vertical table */
 } 
 @media (max-width: 499px) { /* for only styles between 320px and 768px (most mobile devies) */
-    .tile {
-        background: rgb(216, 216, 216);
-        float: left;
-        position: relative;
-        width: 96%;
-        margin: 7px 2% 7px 2%;
-        height: 0;
-        padding: 96% 0 0 0;
+    .project-display {
+        width: calc(min(100%, 1200px) - 10px);
+        margin: 0 0 0 10px;
     }
 
-    .tile-content {
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        margin: 5% 5%;
+    .tile {
+        width: calc(min(100%, 1200px) - 10px);
+        height: calc(min(100%, 1200px) + 50px);
     }
+    
 } 
-@media (min-width: 500px) { /* general desktop && tablet styles if needed */
+@media (min-width: 1200px) { /* general desktop && tablet styles if needed */
+    .project-display {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: min(100%, 1200px);
+    }
+
+    .tile {
+        width: calc(min(100%, 1200px)/3 - 30px);
+        height: calc(min(100%, 1200px)/3 + 30px);
+    }
 
 }
