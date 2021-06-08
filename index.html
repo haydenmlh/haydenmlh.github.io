@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hayden's Personal Homepage</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/styles/main.css">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="/scripts/main.js"></script>
+        
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/photography.css">
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/scripts/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Hayden's Personal Homepage</title>
     </head>
     <body>
         <div id="pre-footer">
             <header>
-                <nav>
-                    <div class="buttons" id="buttons">
-                        <h1 id="header-name">Hayden Mak</h1>
-                        <a class="spacer">.</a>
-                        <a class="current" href="/index.html" class="nav-link">Home</a></li>
-                        <a href="/photography/index.html" class="nav-link">Photography</a></li>
-                        <a href="/blog/index.html" class="nav-link">Blog</a></li>
-                        <a href="/contact.html" class="nav-link">Contact</a></li>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
+                <nav id="buttons">
+                    <h1 id="header-name">Hayden Mak</h1>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    
+                    <a class="current" href="/index.html" id="home-link" class="nav-link">Home</a></li>
+                    <a href="/projects/index.html" id="projects-link" class="nav-link">Projects</a></li>
+                    <a href="/photography/index.html" id="photography-link" class="nav-link">Photography</a></li>
+                    <a href="/blog/index.html" id="blog-link" class="nav-link">Blog</a></li>
+                    <a href="/contact.html" id="contact-link" class="nav-link">Contact</a></li>
                 </nav>
             </header>
             <div id="divider"></div>

@@ -1,7 +1,5 @@
 @media (min-width: 50px) {     /* for general stylings (all screens) */
-    html, body {
-        height: 100%
-    }
+    
     
     body {
         margin: 0;
@@ -10,6 +8,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        width: min(100%, 100vw);
     }
     
     #pre-footer {
@@ -21,17 +21,17 @@
     }
     
     #content {
-        width: min(95vw, 500px);
+        width: 95vw;
     }
     
     footer {
         flex-shrink: 0;
-        margin: 0 0 5px 0;
-        width: min(95vw, 500px);
+        margin: 0;
+        width: 95vw;
     }
 
     footer p {
-        margin: 0 0 0 10px;
+        margin: 0;
     }
     
     footer p::before {
@@ -56,59 +56,65 @@
         -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-        width: min(100vw, 500px);
+        width: min(100%, 500px);
         margin:0;
         padding: 0;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-width: min(100%, 500px);
+        height: 31px;
+        flex-wrap: wrap;
         overflow: hidden;
     }
 
-    .buttons h1 {
+    nav h1 {
         font-family: 'Source Sans Pro', sans-serif;
         margin: 0;
         padding: 0px 10px;
         text-align: center;
-        display: inline;
         text-transform: uppercase;
+        white-space: nowrap;
         color: #d9b310;
+        font-size: 24px;
     }
 
-    .buttons {
-        margin: 0;
-        padding: 0;
-        display: inline;
-        width: 100%;
-    }
-
-    .buttons a {
+    nav a {
         background: #083c5d;
         color: white;
         text-decoration: none; /* No underline for links */
-        display: inline-block;
         padding: 8px 15px 4px 15px;
         border-width: 0;
         margin: 0 2px 0 0;
         font-family: 'Fira Sans Condensed', sans-serif;
+        flex-shrink: 0;
+        overflow: hidden;
     }
 
-    .buttons a.spacer {
-        display: none;
-    }
-
-    .buttons a:hover {
+    nav a:hover {
         background: #095d92;
     }
 
-    .buttons a.current {
+    nav a.current {
         background: #2279ac;
-        border-style: solid;
         pointer-events: none;
         cursor: default;
     }
 
-    .buttons .icon {
+    nav a#spacer{
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav .icon {
         display: none;
     }
 
@@ -124,43 +130,94 @@
 
 } 
 
-
+/* Mobile CSS */
 
 @media (max-width: 499px) {
-    .buttons a:not(.current) {display: none;}
-    .buttons a.icon {
+    #content {
+        width: min(95vw, 500px);
+    }
+
+    footer {
+        width: min(95vw, 500px);
+    }
+    
+    nav {
+        justify-content: start;
+    }
+
+    nav #nav-buttons {
+        display: flex;
+        height: 31px;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    nav a:not(.current) {display: none;}
+    
+    nav a#spacer {
+        display: block;
+    }
+
+    nav a.icon {
         float: left;
         display: block;
         padding: 6px 15px 6px 15px;
         margin: 0 5px 0 0;
+        width: 14;
     }
 
-    .buttons h1 {
-        float: right;
-        display: block;
+    nav a.current{
+        order: 2;
     }
-    .buttons.responsive h1 {
-        float: right;
-        display: block;
+
+    nav h1{
+        order: 3;
+        margin-left: auto;
+        flex-shrink: 1;
+        line-height: 29px;
+        padding: 0 10px;
     }
     
-    .buttons.responsive {position: relative;}
-    .buttons.responsive a.spacer {
-        display: block;
-        background: #1d2731;
-        color: #1d2731;
+    /* responsive change */
+    nav.responsive {
+        display: grid;
+        grid-template-columns: 43.719px calc(100% - 43.719px - 151.938px) 151.938px;
+        grid-template-rows: 31px 31px 31px 31px 31px 31px;
+        width: 100vw;
+        height: 186px;
+        grid-template-areas: 
+            "icon . name"
+            "first first first"
+            "second second second"
+            "third third third"
+            "fourth fourth fourth"
+            "fifth fifth fifth";
     }
-    .buttons.responsive a.icon {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 0;
+    nav.responsive h1#header-name {
+        grid-area: name;
     }
-    .buttons.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        margin: 0;
+    nav.responsive  a.icon {
+        grid-area: icon;
+    }
+    nav.responsive a#home-link {
+        grid-area: first;
+        display:block;
+    }
+    nav.responsive a#projects-link {
+        grid-area: second;
+        display:block;
+    }
+    nav.responsive a#photography-link {
+        grid-area: third;
+        display:block;
+    }
+    nav.responsive a#blog-link {
+        grid-area: fourth;
+        display:block;
+    }
+    nav.responsive > a#contact-link {
+        grid-area: fifth;
+        display:block;
     }
 
 }
@@ -170,15 +227,17 @@
 @media (min-width: 500px) {
     nav{
         min-width: min(100%, 500px);
+        width: min(95%, 1200px);
     }
 
     #content {
         min-width: min(95%, 500px);
-        width: 70%;
+        width: min(95%, 1200px);
+        padding: 0 2.5vw;
     }
 
     footer {
         min-width: min(95%, 500px);
-        width: 70%;
+        width: min(95%, 1200px);
     }
 }
