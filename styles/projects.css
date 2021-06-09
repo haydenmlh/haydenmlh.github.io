@@ -20,7 +20,7 @@
         width: calc(min(100%, 1200px)/2 - max(20px, 2%) - 40px);
         margin: 0 10px 12px 0;
         padding: max(10px, 1%);
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     .img-wrapper {
