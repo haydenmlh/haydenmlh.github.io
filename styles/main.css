@@ -80,7 +80,7 @@
         content: "© 2021 Hayden Mak";
     }   
 
-    /* Header CSS */
+    /* Header CSS  - 31px tall */
     header {
         padding: 0 0 0 0px;
         margin: 0;
@@ -200,7 +200,7 @@
         order: 3;
         margin-left: auto;
         flex-shrink: 1;
-        padding: 0 10px;
+        padding: 0 20px 0 0;
     }
     
     /* responsive change */
@@ -252,6 +252,30 @@
 @media (min-width: 500px) {
     nav{
         width: clamp(500px, 100%, 1200px);
+        padding: 0;
+    }
+
+    nav h1 {
+        padding: 0 2.5%;
+    }
+
+    #content {
+        width: clamp(500px, 100%, 1200px);
+    }
+
+    footer {
+        min-width: min(95%, 500px);
+        width: min(95%, 1200px);
+    }
+}
+
+@media (min-width: 1200px) {
+    nav{
+        width: clamp(500px, 100%, 1200px);
+        padding: 0;
+    }
+
+    nav h1 {
         padding: 0 2.5%;
     }
 

@@ -1,17 +1,18 @@
 @media (min-width: 50px) {     /* for general stylings (all screens) */
-    #content .typewriter {
+    .typewriter {
         background: rgb(50, 140, 193);
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 40vh;
+        height: 60vh;
+        width: 100%;
         padding: 0;
         margin: 0 0 min(2vh, 25px) 0;
-        border-radius: 0 0 6px 6px;
     }
 
-    #content .typewriter h1 {
+    .typewriter h1 {
         color: white;
         font-size: 30px;
         display: inline-block;
@@ -19,11 +20,21 @@
         white-space: nowrap; 
         margin: 0;
         letter-spacing: .05em; 
-        filter: drop-shadow(-1px 1px 1px rgb(85, 85, 85));
+        background: #328cc1;
+        padding: 0 0 0 5px;
+        position: absolute;
+    }
+
+    .typewriter h1#welcome-msg {
+        bottom: 57px;
+    }
+
+    .typewriter h1#welcome-msg-2 {
+        bottom: 20px;
     }
     
     .typewriter .current {
-        border-right: .15em solid white; /* The typwriter cursor */
+        border-right: .15em solid white;
         animation: 
             blink-caret 1s step-end infinite;
     }
@@ -33,12 +44,23 @@
         from, to { border-color: transparent }
         50% { border-color: white; }
     }
+
+    #content {
+        min-height: calc(40vh - 51px - min(2vh, 25px));
+    }
 } 
 
 /* Mobile CSS */
 @media (max-width: 499px) { 
-    #content .typewriter h1 {
+    .typewriter h1 {
         font-size: 24px;
+    }
+    .typewriter h1#welcome-msg {
+        bottom: 50px;
+    }
+
+    .typewriter h1#welcome-msg-2 {
+        bottom: 20px;
     }
 } 
 

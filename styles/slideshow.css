@@ -1,0 +1,67 @@
+/* General CSS - All screens */
+@media (min-width: 50px) {
+    /* Slideshow configuration from 
+    http://css3.bradshawenterprises.com/cfimg/#cfimg3 */
+
+    #slideshow {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        margin: auto;
+    }
+
+    #slideshow img{
+        object-fit: cover;
+        width: 100%;
+        height: 60vh;
+        position:absolute;
+        left: 0;
+        animation-name: fadeinout;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 22s;
+    }
+      
+    @keyframes fadeinout {
+        0% {
+            opacity:1;
+        }
+        18.1818% {
+            opacity:1;
+        }
+        25% {
+            opacity:0;
+        }
+        93.1818% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+
+    #slideshow img:nth-of-type(1) {
+        animation-delay: 16.5s;
+    }
+    #slideshow img:nth-of-type(2) {
+        animation-delay: 11s;
+    }
+    #slideshow img:nth-of-type(3) {
+        animation-delay: 5.5s;
+    }
+}
+
+/* Mobile CSS */
+@media (max-width: 499px) { 
+
+} 
+
+/* Desktop CSS */
+@media (min-width: 500px) { 
+
+}
+
+/* Max Width Desktop CSS */
+@media (min-width: 1200px) { 
+
+}
