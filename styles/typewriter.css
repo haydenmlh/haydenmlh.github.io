@@ -1,12 +1,12 @@
 @media (min-width: 50px) {     /* for general stylings (all screens) */
     #content .typewriter {
-        background: #0b3c5d;
+        background: rgb(50, 140, 193);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 40vh;
-        padding: 0 2.5vw;
+        padding: 0;
         margin: 0 0 min(2vh, 25px) 0;
     }
 
@@ -18,7 +18,7 @@
         white-space: nowrap; 
         margin: 0;
         letter-spacing: .05em; 
-        filter: drop-shadow(2px 2px 2px black);
+        filter: drop-shadow(-2px 2px 2px black);
     }
     
     .typewriter .current {

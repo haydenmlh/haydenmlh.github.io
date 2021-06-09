@@ -1,4 +1,5 @@
-@media (min-width: 50px) {     /* for general stylings (all screens) */
+/* 2-column layout */
+@media (min-width: 50px) {
     
 
     #content {
@@ -7,19 +8,23 @@
     }
 
     .project-display {
-        margin: 0;
+        margin: 10px 2.5% 0 2.5%;
         display: flex;
-        margin: 0 auto;
         flex-wrap: wrap;
-        width: min(100%, 1200px);
+        width: min(95%, 1200px);
     }
 
     .tile {
         background: rgb(216, 216, 216);
         float: left;
-        width: calc(min(100%, 1200px)/2 - 30px);
+        width: calc(min(100%, 1200px)/2 - max(20px, 2%) - 40px);
         margin: 0 10px 12px 0;
-        padding: 10px 10px;
+        padding: max(10px, 1%);
+        border-radius: 10px;
+    }
+
+    .img-wrapper {
+        width: 100%;
     }
 
     .tile-content {
@@ -27,6 +32,7 @@
         width: 100%;
         object-fit: cover;
         z-index: 999;
+        border-radius: 5px;
     }
     
     .tile-title {
@@ -48,29 +54,27 @@
 
     /* End of vertical table */
 } 
-@media (max-width: 599px) { /* for only styles between 320px and 768px (most mobile devies) */
+
+/* 1-column display  */
+@media (max-width: 599px) { 
     .project-display {
         width: calc(min(100%, 1200px) - 10px);
-        margin: 0 0 0 10px;
+        margin: 0 0 0 0;
     }
 
     .tile {
-        width: calc(min(100%, 1200px) - 10px);
+        width: calc(min(100%, 1200px) - max(10px, 1%) - 40px);
         height: calc(min(100%, 1200px) + 50px);
     }
     
 } 
-@media (min-width: 1200px) { /* general desktop && tablet styles if needed */
-    .project-display {
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        width: min(100%, 1200px);
-    }
+
+/* 3 column display */
+@media (min-width: 1200px) { 
 
     .tile {
-        width: calc(min(100%, 1200px)/3 - 30px);
-        height: calc(min(100%, 1200px)/3 + 30px);
+        width: calc(min(100%, 1200px)/3 - max(30px, 3%) - 30px);
+        height: calc(min(100%, 1200px)/3 + 3%);
     }
 
 }

@@ -24,12 +24,13 @@
     
     p {
         font-size: 16px;
-        margin: 0 min(20px, 2.5vw);
+        margin: 0 2.5%;
     }
 
     h1 {
-        text-align: center;
-        margin: 10px 0 10px;
+        font-size: 30px;
+        text-align: left;
+        margin: 15px 0 20px 2.5%;
     }
 
     #pre-footer {
@@ -40,6 +41,13 @@
         align-items: center;
     }
     
+    #title {
+        background: #328cc1;
+        color: white;
+        margin: 0;
+        padding: 0 0 0 2.5%;
+    }
+
     #content {
         min-height: calc(100vh - 56px);
         background: rgba(255, 255, 255, 0.5);        
@@ -92,7 +100,7 @@
     nav h1 {
         font-family: 'Source Sans Pro', sans-serif;
         margin: 0;
-        padding: 0px 10px;
+        padding: 0 10px 0 0;
         text-align: center;
         text-transform: uppercase;
         white-space: nowrap;
@@ -107,7 +115,7 @@
         text-decoration: none; /* No underline for links */
         padding: 8px 15px 4px 15px;
         border-width: 0;
-        margin: 0 2px 0 0;
+        margin: 0 3px 0 0;
         font-family: 'Fira Sans Condensed', sans-serif;
         flex-shrink: 0;
         overflow: hidden;
@@ -118,7 +126,7 @@
     }
 
     nav a.current {
-        background: #2279ac;
+        background: #328cc1;
         pointer-events: none;
         cursor: default;
     }
@@ -132,15 +140,6 @@
 
     nav .icon {
         display: none;
-    }
-
-    #divider {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border-style: solid none none none;
-        border-width: 5px;
-        border-color: #328cc1;
     }
     /* Header CSS end */
 

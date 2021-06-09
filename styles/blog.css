@@ -1,0 +1,14 @@
+/* General CSS - All screens */
+@media (min-width: 50px) {     
+    
+}
+
+/* Mobile CSS */
+@media (max-width: 499px) { 
+
+} 
+
+/* Desktop CSS */
+@media (min-width: 500px) { 
+
+}

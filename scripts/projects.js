@@ -2,6 +2,7 @@ function changeWrapperHW() {
     var tiles=document.getElementsByClassName('tile');
     var tile_titles = document.getElementsByClassName('tile-title');
     var tile_desc = document.getElementsByClassName('tile-description');
+    
     for (i = 0; i < tiles.length; i++) {
         title_height = tile_titles[i].offsetHeight
         desc_height = tile_desc[i].offsetHeight
@@ -11,8 +12,7 @@ function changeWrapperHW() {
     
     var wrappers=document.getElementsByClassName('img-wrapper');
     for (i = 0; i < wrappers.length; i++) {
-        var target = wrappers[i].parentElement.offsetWidth - 22;
-        wrappers[i].style.width = target + "px";
+        var target = wrappers[i].offsetWidth;
         wrappers[i].style.height = target + "px";
     }
     
