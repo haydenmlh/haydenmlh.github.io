@@ -9,19 +9,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/photography.css">
+        <link rel="stylesheet" href="/styles/typewriter.css">
 
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="/scripts/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+        
         <title>Hayden's Personal Homepage</title>
     </head>
     <body>
         <div id="pre-footer">
             <header>
-                <nav id="buttons">
+                <nav id="buttons" class="noselect">
                     <h1 id="header-name">Hayden Mak</h1>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
@@ -37,11 +35,18 @@
             <div id="divider"></div>
 
             <div id="content">
-                <h1 id="welcome-msg">Welcome to my site!</h1>
-                <p>My website is getting better! I enjoy photography a lot, check out the photography section!</p>
+                <div class="typewriter">
+                    <h1 id="welcome-msg" class="current noselect"></h1>
+                    <h1 id="welcome-msg-2" class="noselect">&nbsp;</h1>
+                </div>
+                <p>I enjoy photography a lot, check out the photography section!</p>
             </div>
         </div>        
 
         <footer><p></p></footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/scripts/main.js"></script>
+        <script src="/scripts/typewriter.js"></script>
     </body>
 </html>
