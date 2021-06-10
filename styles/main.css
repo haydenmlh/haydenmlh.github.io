@@ -103,6 +103,12 @@
         overflow: hidden;
     }
 
+    nav a#name-link {
+        text-decoration: none;
+        padding: 0 3px 0 0;
+        width: fit-content;
+    }
+
     nav h1 {
         font-family: 'Source Sans Pro', sans-serif;
         margin: 0;
@@ -113,9 +119,11 @@
         color: #d9b310;
         font-size: 24px;
         line-height: 29px;
+        text-decoration: none;
+        width: fit-content;
     }
 
-    nav a {
+    nav a.nav-link {
         background: #083c5d;
         color: white;
         text-decoration: none; /* No underline for links */
@@ -128,7 +136,7 @@
         border-radius: 4px 4px 0 0;
     }
 
-    nav a:hover {
+    nav a.nav-link:hover {
         background: #095d92;
     }
 
@@ -136,13 +144,6 @@
         background: #328cc1;
         pointer-events: none;
         cursor: default;
-    }
-
-    nav a#spacer{
-        height: 0;
-        width: 0;
-        margin: 0;
-        padding: 0;
     }
 
     nav .icon {
@@ -196,29 +197,30 @@
         order: 2;
     }
 
-    nav h1{
+    nav a#name-link{
         order: 3;
+        display: block;
         margin-left: auto;
         flex-shrink: 1;
-        padding: 0 20px 0 0;
+        padding: 0 15px 0 0;
     }
     
     /* responsive change */
     nav.responsive {
         display: grid;
-        grid-template-columns: 43.719px calc(100% - 43.719px - 151.938px) 151.938px;
+        grid-template-columns: 43.719px calc(100% - 43.719px - 156.94px) 156.94px;
         grid-template-rows: 31px 31px 31px 31px 31px 31px;
         width: 100vw;
         height: 186px;
         grid-template-areas: 
-            "icon . name"
+            "icon name name"
             "first first first"
             "second second second"
             "third third third"
             "fourth fourth fourth"
             "fifth fifth fifth";
     }
-    nav.responsive h1#header-name {
+    nav.responsive a#name-link {
         grid-area: name;
     }
     nav.responsive  a.icon {

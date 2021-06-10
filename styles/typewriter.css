@@ -1,6 +1,6 @@
 @media (min-width: 50px) {     /* for general stylings (all screens) */
     .typewriter {
-        background: rgb(50, 140, 193);
+        background: rgba(255, 255, 255, 0.5); 
         position: relative;
         display: flex;
         flex-direction: column;
@@ -8,8 +8,8 @@
         justify-content: center;
         height: 60vh;
         width: min(100vw, 1200px);
-        padding: 0;
-        margin: 0 0 min(2vh, 25px) 0;
+        padding: 0 0 min(2vh, 25px) 0;
+        margin: 0;
     }
 
     .typewriter h1 {
