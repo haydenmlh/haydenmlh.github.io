@@ -17,33 +17,37 @@
         
         <title>Hayden's Personal Homepage</title>
     </head>
-    <body>
+    <body id="body">
         <div id="pre-footer">
-            <header>
-                <nav id="buttons" class="noselect">
+            <header class="noselect">
+                <nav id="buttons">
                     <a href="/index.html" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
                     <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                     <div id="header-left" class="header-flanks">
-                        <a class="current nav-link" href="/index.html" id="home-link">Home</a></li>
+                        <a class="current nav-link" href="/about.html" id="about-link">About</a></li>
                         <a class="nav-link" href="/projects/index.html" id="projects-link" >Projects</a></li>
                         <a class="nav-link" href="/photography/index.html" id="photography-link">Photography</a></li>
+                        
                     </div>
                     <div id="header-right" class="header-flanks">
                         <a class="nav-link" href="/blog/index.html" id="blog-link">Blog</a></li>
                         <a class="nav-link" href="/contact.html" id="contact-link">Contact</a></li>
                     </div>
-                    <div id="responsive-bottom-border"></div>
+
+                    <a class="nav-link mobile" href="/about.html" id="about-link-mobile">About</a></li>
+                    <a class="nav-link mobile" href="/projects/index.html" id="projects-link-mobile" >Projects</a></li>
+                    <a class="nav-link mobile" href="/photography/index.html" id="photography-link-mobile">Photography</a></li>
+                    <a class="nav-link mobile" href="/blog/index.html" id="blog-link-mobile">Blog</a></li>
+                    <a class="nav-link mobile" href="/contact.html" id="contact-link-mobile">Contact</a></li>
+                    <div class="mobile" id="responsive-bottom-border-mobile"></div>
+
                 </nav>
             </header>
             
             <div class="typewriter">
                 <div id="slideshow">
-                    <div id="img-1"></div>
-                    <div id="img-2"></div>
-                    <div id="img-3"></div>
-                    <div id="img-4"></div>
                 </div>
 
                 <h1 id="welcome-msg" class="current noselect"></h1>
