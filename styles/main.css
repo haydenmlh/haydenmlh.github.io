@@ -45,7 +45,7 @@
         background: #328cc1;
         color: white;
         margin: 0;
-        padding: 0 0 2px 2.5%;
+        padding: 0 0 4px 2.5%;
         border-radius: 0 0 6px 6px;
     }
 
@@ -106,11 +106,11 @@
     nav a#name-link {
         display: inline-block;
         text-decoration: none;
-        margin: 0 7px 0 0;
+        margin: 0 7px 0 2.5%;
         width: auto;
     }
 
-    nav h1 {
+    nav h1#header-name {
         font-family: 'Source Sans Pro', sans-serif;
         margin: 0;
         padding: 0;
