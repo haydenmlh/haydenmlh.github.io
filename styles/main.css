@@ -187,7 +187,7 @@
         display: block;
         padding: 6px 15px 6px 15px;
         margin: 0 5px 0 0;
-        width: 14;
+        width: 14px;
     }
 
     nav .current{
@@ -205,9 +205,9 @@
     /* responsive change */
     nav.responsive {
         display: grid;
-        grid-template-columns: 43.719px calc(100% - 43.719px - 156.94px) 156.94px;
+        grid-template-columns: 44px calc(100% - 44px - 156.94px) 156.94px;
         grid-template-rows: 31px 31px 31px 31px 31px 31px 3px;
-        width: 100vw;
+        width: 100%;
         height: 189px;
         grid-template-areas: 
             "icon name name"
