@@ -16,8 +16,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        width: 100vw;
+        min-height: 105vh;
+        width: 100%;
         overflow-x: hidden;  /* Hides horizontal scrollbar*/
         color: #1d2731;
     }
@@ -47,8 +47,7 @@
     }
 
     #title-text {
-        display: inline;
-        margin: 0;
+        text-align: center;
     }
 
     #content {
@@ -219,6 +218,10 @@
             "contact contact contact"
             "line line line";
     }
+    nav.responsive #name-link {
+        grid-area: name;
+        display: block;
+    }
     nav.responsive #about-link-mobile {
         grid-area: about;
         display: block;
@@ -243,6 +246,7 @@
         display:block;
     }
     nav.responsive #responsive-bottom-border-mobile {
+        display: block;
         background: #d9b310;
         grid-area: line;
         width: 100%;
@@ -264,7 +268,7 @@
 
     nav #name-link {
         padding: 0;
-        margin: 0 calc(50% - 106px - 200.59px/2 - 2.5%) 0 calc(50% - 215.66px - 200.59px/2 - 2.5%);
+        margin: 0 calc(50% - 162.92px - 200.59px/2 - 2.5%) 0 calc(50% - 158.73px - 200.59px/2 - 2.5%);
         order: 2;
     }
 
@@ -301,5 +305,8 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 710px) {
+    nav #name-link {
+        margin: 0 calc(50% - 162.92px - 200.59px/2 - 2.5%) 0 calc(50% - 158.73px - 200.59px/2 - 2.5%);
+    }
 }

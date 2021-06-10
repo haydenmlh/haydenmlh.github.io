@@ -1,12 +1,12 @@
-var i = 0;
+var i_typewriter = 0;
 var txt = 'Hey there, I\'m Hayden!Welcome to my website.';
 var cur_h1 = document.getElementById("welcome-msg");
 
 function typeWriter() {
-    if (i < txt.length) {
-        char_i = txt.charAt(i);
+    if (i_typewriter < txt.length) {
+        char_i = txt.charAt(i_typewriter);
         cur_h1.innerHTML += char_i;
-        i++;
+        i_typewriter++;
         if (char_i == '!') {
             welc_2 = document.getElementById("welcome-msg-2");
             cur_h1.className = "noselect";

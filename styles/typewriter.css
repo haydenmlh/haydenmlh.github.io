@@ -30,7 +30,7 @@
     }
 
     .typewriter h1#welcome-msg-2 {
-        top: 117px;
+        top: 118px;
     }
     
     .typewriter .current {
@@ -52,7 +52,9 @@
 
 /* Mobile CSS */
 @media (max-width: 499px) { 
-    
+    .typewriter {
+        height: calc(100vh - 31px);
+    }
     .typewriter h1 {
         font-size: 24px;
     }
@@ -61,7 +63,7 @@
     }
 
     .typewriter h1#welcome-msg-2 {
-        top: 110px;
+        top: 111px;
     }
 } 
 

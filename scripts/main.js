@@ -8,13 +8,3 @@ function myFunction() {
     }
 }
 
-document.getElementById("body").onscroll = function myFunction() {  
-    var scrolltotop = document.scrollingElement.scrollTop;
-    var target = document.getElementById("slideshow");
-    var width = target.offsetWidth;
-    var xvalue = - 0.04 * scrolltotop;
-    var factor = 0.2;
-    var yvalue = scrolltotop * factor;
-    target.style.backgroundPosition = xvalue + "px " + yvalue + "px";
-}
-

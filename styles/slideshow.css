@@ -3,18 +3,10 @@
     /* Slideshow configuration from 
     http://css3.bradshawenterprises.com/cfimg/#cfimg3 */
 
-    
-    #slideshow {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
     #slideshow{
         width: 100%;
-        height: 100%;
-        position:absolute;
+        height: calc(100vh - 100px);
+        position: absolute;
         margin: 0;
         left: 0;
         background-position: center;
@@ -72,6 +64,9 @@
 
 /* Mobile CSS */
 @media (max-width: 499px) {
+    #slideshow{
+        height: calc(100vh - 31px);
+    }
 } 
 
 /* Desktop CSS */
