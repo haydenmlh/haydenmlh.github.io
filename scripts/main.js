@@ -2,10 +2,9 @@
 function myFunction() {
     var x = document.getElementById("buttons");
     if (x.className === "noselect") {
-      x.className += "noselect responsive";
+      x.className += " responsive";
     } else {
       x.className = "noselect";
     }
 }
-
 

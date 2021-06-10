@@ -42,11 +42,8 @@
     }
     
     #title {
-        background: #328cc1;
-        color: white;
-        margin: 0;
+        margin: 25px auto 0 auto;
         padding: 0 0 4px 2.5%;
-        border-radius: 0 0 6px 6px;
     }
 
     #title-text {
@@ -55,25 +52,20 @@
     }
 
     #content {
-        min-height: calc(100vh - 56px);
-        background: rgba(255, 255, 255, 0.5);        
+        min-height: calc(100vh - 56px); 
+        background: white;      
     }
-
-    /*     
-    #content * {
-        margin: 0 min(20px, 2.5vw);
-    }
-    */
 
     footer {
         flex-shrink: 0;
         margin: 0;
-        width: 95vw;
-        background: rgba(255, 255, 255, 0.5);  
+        width: 100vw; 
+        background: white;
     }
 
     footer p {
         margin: 0;
+        text-align: center;
     }
     
     footer p::before {
@@ -85,10 +77,9 @@
         padding: 0 0 0 0px;
         margin: 0;
         width: 100%;
-        background: #1d2731;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav {
@@ -101,32 +92,34 @@
         align-items: flex-end;
         flex-wrap: wrap;
         overflow: hidden;
+        background: white;
     }
 
-    nav a#name-link {
+    nav #name-link {
         display: inline-block;
         text-decoration: none;
         margin: 0 7px 0 2.5%;
         width: auto;
     }
 
-    nav h1#header-name {
-        font-family: 'Source Sans Pro', sans-serif;
+    
+
+    nav #header-name {
+        font-family: 'Nanum Gothic', sans-serif;
         margin: 0;
         padding: 0;
         text-align: center;
         text-transform: uppercase;
         white-space: nowrap;
-        color: #d9b310;
+        color: #0b3c5d;
         font-size: 24px;
         line-height: 29px;
         text-decoration: none;
         width: fit-content;
     }
 
-    nav a.nav-link {
-        background: #083c5d;
-        color: white;
+    nav .nav-link {
+        color: #1d2731;
         text-decoration: none; /* No underline for links */
         padding: 8px 15px 4px 15px;
         border-width: 0;
@@ -134,20 +127,28 @@
         font-family: 'Fira Sans Condensed', sans-serif;
         flex-shrink: 0;
         overflow: hidden;
-        border-radius: 4px 4px 0 0;
+        -moz-transition:color .1s ease-in-out;
+        -o-transition:color .1s ease-in-out;
+        -webkit-transition:color .1s ease-in-out;
     }
 
-    nav a.nav-link:hover {
-        background: #095d92;
+    nav .nav-link:hover {
+        color: #328cc1;
     }
 
-    nav a.current {
-        background: #328cc1;
-        pointer-events: none;
-        cursor: default;
+    nav .current {
+        color: #0b3c5d;
     }
 
     nav .icon {
+        display: none;
+    }
+
+    nav #home-link {
+        display: none; 
+    }
+
+    nav #responsive-bottom-border {
         display: none;
     }
     /* Header CSS end */
@@ -166,7 +167,7 @@
     }
 
     footer {
-        width: min(95vw, 500px);
+        width: min(100vw, 500px);
     }
     
     nav {
@@ -180,13 +181,11 @@
         overflow: hidden;
     }
 
-    nav a:not(.current) {display: none;}
-    
-    nav a#spacer {
-        display: block;
+    nav a {
+        display: none;
     }
 
-    nav a.icon {
+    nav .icon {
         float: left;
         display: block;
         padding: 6px 15px 6px 15px;
@@ -194,11 +193,11 @@
         width: 14;
     }
 
-    nav a.current{
+    nav .current{
         order: 2;
     }
 
-    nav a#name-link{
+    nav #name-link{
         order: 3;
         display: block;
         margin-left: auto;
@@ -210,56 +209,87 @@
     nav.responsive {
         display: grid;
         grid-template-columns: 43.719px calc(100% - 43.719px - 156.94px) 156.94px;
-        grid-template-rows: 31px 31px 31px 31px 31px 31px;
+        grid-template-rows: 31px 31px 31px 31px 31px 5px;
         width: 100vw;
-        height: 186px;
+        height: 160px;
         grid-template-areas: 
             "icon name name"
-            "first first first"
-            "second second second"
-            "third third third"
-            "fourth fourth fourth"
-            "fifth fifth fifth";
+            "projects projects projects"
+            "photos photos photos"
+            "blog blog blog"
+            "contact contact contact"
+            "line line line";
     }
-    nav.responsive a#name-link {
+    nav.responsive #name-link {
         grid-area: name;
     }
     nav.responsive  a.icon {
         grid-area: icon;
     }
-    nav.responsive a#home-link {
-        grid-area: first;
+    nav.responsive #projects-link {
+        grid-area: projects;
         display:block;
     }
-    nav.responsive a#projects-link {
-        grid-area: second;
+    nav.responsive #photography-link {
+        grid-area: photos;
         display:block;
     }
-    nav.responsive a#photography-link {
-        grid-area: third;
+    nav.responsive #blog-link {
+        grid-area: blog;
         display:block;
     }
-    nav.responsive a#blog-link {
-        grid-area: fourth;
+    nav.responsive #contact-link {
+        grid-area: contact;
         display:block;
     }
-    nav.responsive > a#contact-link {
-        grid-area: fifth;
-        display:block;
+    nav.responsive #responsive-bottom-border {
+        background: #d9b310;
+        grid-area: line;
+        width: 100%;
+        height: 5px;
     }
     /* Responsive Change end */
 }
 
 /* Desktop CSS */
 
-@media (min-width: 500px) {
+@media (min-width: 500px) { 
     nav{
         width: clamp(500px, 100%, 1200px);
         padding: 0;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;        
     }
 
-    nav h1 {
-        padding: 0 2.5%;
+    nav #name-link {
+        padding: 0;
+        margin: 0;
+        order: 2;
+    }
+
+    nav #header-name {
+        font-size: 30px;
+    }
+
+    nav #header-left {
+        order: 1;
+        margin-left: 2.5%;
+    }
+
+    nav #header-right{
+        order: 3;
+        margin-right: 2.5%;
+    }
+
+    nav .header-flanks {
+        padding: 5px 0px;
+        border-top: 1px solid #0b3c5d;
+        border-bottom: 1px solid #0b3c5d;
+    }
+
+    nav .nav-link {
+        padding: 0 5px;
     }
 
     #content {
@@ -267,27 +297,9 @@
     }
 
     footer {
-        min-width: min(95%, 500px);
-        width: min(95%, 1200px);
+        width: clamp(500px, 100%, 1200px);
     }
 }
 
 @media (min-width: 1200px) {
-    nav{
-        width: clamp(500px, 100%, 1200px);
-        padding: 0;
-    }
-
-    nav h1 {
-        padding: 0 2.5%;
-    }
-
-    #content {
-        width: clamp(500px, 100%, 1200px);
-    }
-
-    footer {
-        min-width: min(95%, 500px);
-        width: min(95%, 1200px);
-    }
 }

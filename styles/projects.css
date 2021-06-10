@@ -17,8 +17,8 @@
     .tile {
         background: rgb(216, 216, 216);
         float: left;
-        width: calc(min(100%, 1200px)/2 - max(20px, 2%) - 40px);
-        height: calc(min(100%, 1200px)/2 - max(20px, 2%) - 40px);
+        width: calc(100%/2 - 100vh * 0.027 - 1  0px);
+        height: calc(100%/2 - 100vh * 0.025);
         margin: 0 10px 12px 0;
         padding: max(10px, 1%);
         border-radius: 8px;
@@ -58,15 +58,15 @@
 } 
 
 /* 1-column display  */
-@media (max-width: 599px) { 
+@media (max-width: 499px) { 
     .project-display {
         width: calc(min(100%, 1200px) - 10px);
-        margin: 0 0 0 0;
     }
 
     .tile {
-        width: calc(min(100%, 1200px) - max(10px, 1%) - 40px);
+        width: calc(min(100%, 1200px) - max(10px, 1%) - 45px);
         height: calc(min(100%, 1200px) + 50px);
+        margin: 10px 0 0 5px;
     }
     
 } 

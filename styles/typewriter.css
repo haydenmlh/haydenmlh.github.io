@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60vh;
+        height: calc(100vh - 100px); /* Adjust based on header height*/
         width: min(100vw, 1200px);
         padding: 0 0 min(2vh, 25px) 0;
         margin: 0;
@@ -20,17 +20,17 @@
         white-space: nowrap;
         margin: 0;
         letter-spacing: .05em; 
-        background: rgba(50, 140, 193, 0.6);
+        background: #0b3c5d99;
         padding: 0 0 0 5px;
         position: absolute;
     }
 
     .typewriter h1#welcome-msg {
-        bottom: 77px;
+        top: 80px;
     }
 
     .typewriter h1#welcome-msg-2 {
-        bottom: 40px;
+        top: 117px;
     }
     
     .typewriter .current {
@@ -52,15 +52,16 @@
 
 /* Mobile CSS */
 @media (max-width: 499px) { 
+    
     .typewriter h1 {
         font-size: 24px;
     }
     .typewriter h1#welcome-msg {
-        bottom: 70px;
+        top: 80px;
     }
 
     .typewriter h1#welcome-msg-2 {
-        bottom: 40px;
+        top: 110px;
     }
 } 
 

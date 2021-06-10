@@ -3,19 +3,25 @@
     /* Slideshow configuration from 
     http://css3.bradshawenterprises.com/cfimg/#cfimg3 */
 
+    
     #slideshow {
         position: relative;
         width: min(100vw, 1200px);
-        height: 60vh;
+        height: 100%;
         margin: auto;
     }
 
-    #slideshow img{
-        object-fit: cover;
+    #slideshow div{
         width: min(100vw, 1200px);
-        height: 60vh;
+        height: 100%;
         position:absolute;
+        margin: 0;
         left: 0;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
         animation-name: fadeinout;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
@@ -40,20 +46,26 @@
         }
     }
 
-    #slideshow img:nth-of-type(1) {
+    #slideshow div:nth-of-type(1) {
         animation-delay: 16.5s;
+        background-image: url("/images/me_1.jpg");
     }
-    #slideshow img:nth-of-type(2) {
+    #slideshow div:nth-of-type(2) {
         animation-delay: 11s;
+        background-image: url("/images/me_3.jpg");
     }
-    #slideshow img:nth-of-type(3) {
+    #slideshow div:nth-of-type(3) {
         animation-delay: 5.5s;
+        background-image: url("/images/me_2.jpg");
+    }
+    #slideshow div:nth-of-type(4) {
+        animation-delay: 0s;
+        background-image: url("/images/me_4.jpg");
     }
 }
 
 /* Mobile CSS */
-@media (max-width: 499px) { 
-
+@media (max-width: 499px) {
 } 
 
 /* Desktop CSS */
