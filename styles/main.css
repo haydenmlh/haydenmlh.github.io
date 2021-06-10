@@ -104,15 +104,16 @@
     }
 
     nav a#name-link {
+        display: inline-block;
         text-decoration: none;
-        padding: 0 3px 0 0;
-        width: fit-content;
+        margin: 0 7px 0 0;
+        width: auto;
     }
 
     nav h1 {
         font-family: 'Source Sans Pro', sans-serif;
         margin: 0;
-        padding: 0 10px 0 0;
+        padding: 0;
         text-align: center;
         text-transform: uppercase;
         white-space: nowrap;
