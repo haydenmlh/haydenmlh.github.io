@@ -15,9 +15,7 @@ function changeWrapperHW() {
         var target = wrappers[i].offsetWidth;
         wrappers[i].style.height = target + "px";
     }
-    
-    
 }
 
-window.onload = changeWrapperHW;
+changeWrapperHW();
 window.onresize = changeWrapperHW;

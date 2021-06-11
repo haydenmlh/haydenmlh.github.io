@@ -21,17 +21,6 @@
         overflow-x: hidden;  /* Hides horizontal scrollbar*/
         color: #1d2731;
     }
-    
-    p {
-        font-size: 16px;
-        margin: 0 2.5%;
-    }
-
-    h1 {
-        font-size: 30px;
-        text-align: left;
-        margin: 15px 0 20px 2.5%;
-    }
 
     #pre-footer {
         flex: 1 0 auto;
@@ -40,7 +29,12 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
+    #content {
+        min-height: calc(100vh - 56px); 
+        background: white;      
+    }
+
     #title {
         margin: 25px auto 0 auto;
         padding: 0 0 4px 2.5%;
@@ -48,11 +42,6 @@
 
     #title-text {
         text-align: center;
-    }
-
-    #content {
-        min-height: calc(100vh - 56px); 
-        background: white;      
     }
 
     footer {
@@ -166,7 +155,16 @@
     footer {
         width: min(100vw, 579px);
     }
-    
+    #title {
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+    #title-text {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header CSS */
     nav {
         justify-content: start;
         height: 50px;
@@ -254,11 +252,32 @@
         height: 3px;
     }
     /* Responsive Change end */
+    /* Header CSS */
 }
 
 /* Desktop CSS */
 
 @media (min-width: 580px) { 
+    p {
+        font-size: 16px;
+        margin: 0 2.5%;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: left;
+        margin: 15px 0 20px 2.5%;
+    }
+
+    #content {
+        width: clamp(580px, 100%, 1200px);
+    }
+
+    footer {
+        width: clamp(580px, 100%, 1200px);
+    }
+    
+    /* Header CSS */
     nav{
         width: clamp(580px, 100%, 1200px);
         padding: 0;
@@ -296,14 +315,7 @@
     nav .nav-link {
         padding: 0 5px;
     }
-
-    #content {
-        width: clamp(580px, 100%, 1200px);
-    }
-
-    footer {
-        width: clamp(580px, 100%, 1200px);
-    }
+    /* Header CSS End */
 }
 
 @media (min-width: 710px) {
