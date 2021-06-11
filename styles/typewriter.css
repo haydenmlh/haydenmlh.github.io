@@ -25,11 +25,11 @@
         position: absolute;
     }
 
-    .typewriter h1#welcome-msg {
+    .typewriter h1#welcome-1 {
         top: 80px;
     }
 
-    .typewriter h1#welcome-msg-2 {
+    .typewriter h1#welcome-2 {
         top: 118px;
     }
     
@@ -58,11 +58,11 @@
     .typewriter h1 {
         font-size: 24px;
     }
-    .typewriter h1#welcome-msg {
+    .typewriter h1#welcome-1 {
         top: 80px;
     }
 
-    .typewriter h1#welcome-msg-2 {
+    .typewriter h1#welcome-2 {
         top: 111px;
     }
 } 
