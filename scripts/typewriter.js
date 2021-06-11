@@ -7,13 +7,15 @@ var i_type_2 = 0;
 var i_type_editor = 0;
 var i_edit_txt = 0;
 var char_i;
+var base_delay = 40;
+var random_delay = 40;
 
 var cur1_txt = 'Hey there, welcome!';
 
 var cur2_txt = "I am a ";
-var cur2_edit_txt_1 = "photography enthusiast";
+var cur2_edit_txt_1 = "Computer Scientist";
 var cur2_edit_txt_2 = "graphics designer";
-var cur2_edit_txt_3 = "Computer Scientist";
+var cur2_edit_txt_3 = "photography enthusiast";
 var cur2_edit_txt_4 = "Hayden Mak.";
 
 
@@ -28,26 +30,27 @@ for (var i = 0; i < cur2_edit_txts.length; i++){
 }
 
 
-var delete_delay = 4;
+var delete_delay = 14;
+var type_delay = 7;
+
 editor_delays = [];
-editor_delays.push(delete_delay)
+editor_delays.push(type_delay)
 for (var i = 0; i < (cur2_edit_txts.length - 2) ; i++) {
     editor_delays.push(editor_delays[editor_delays.length - 1] + cur2_edit_txts_lens[i]);
     editor_delays.push(editor_delays[editor_delays.length - 1] + delete_delay);
     editor_delays.push(editor_delays[editor_delays.length - 1] + cur2_edit_txts_lens[i]);
-    editor_delays.push(editor_delays[editor_delays.length - 1] + delete_delay);
+    editor_delays.push(editor_delays[editor_delays.length - 1] + type_delay);
 }
-
 editor_delays.push(editor_delays[editor_delays.length - 1] + cur2_edit_txts_lens[cur2_edit_txts_lens.length - 2]);
 editor_delays.push(editor_delays[editor_delays.length - 1] + delete_delay);
 // delete the "a " to allow for final element of Hayden Mak
 editor_delays.push(editor_delays[editor_delays.length - 1] + cur2_edit_txts_lens[cur2_edit_txts_lens.length - 2] + 2);
-editor_delays.push(editor_delays[editor_delays.length - 1] + delete_delay);
+editor_delays.push(editor_delays[editor_delays.length - 1] + type_delay);
 // write final element ("Hayden Mak.")
 editor_delays.push(editor_delays[editor_delays.length - 1] + cur2_edit_txts_lens[cur2_edit_txts_lens.length - 1]);
 editor_delays.push(editor_delays[editor_delays.length - 1] + delete_delay);
 
-console.log(editor_delays)
+console.log(editor_delays);
 
 
 
@@ -129,7 +132,7 @@ function typeWriter() {
 
 
         i_type_editor++;
-        setTimeout(typeWriter, Math.floor(Math.random() * 40) + 60);
+        setTimeout(typeWriter, Math.floor(Math.random() * random_delay) + base_delay);
     }
 }
 
