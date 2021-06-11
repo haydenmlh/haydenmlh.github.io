@@ -17,4 +17,4 @@ function typeWriter() {
     }
 }
 
-window.onload = typeWriter;
+window.onload = typeWriter();

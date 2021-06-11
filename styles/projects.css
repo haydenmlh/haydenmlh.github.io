@@ -58,7 +58,7 @@
 } 
 
 /* 1-column display  */
-@media (max-width: 499px) { 
+@media (max-width: 579px) { 
     .project-display {
         width: calc(min(100%, 1200px) - 10px);
     }

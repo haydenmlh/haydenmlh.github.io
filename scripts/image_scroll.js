@@ -1,12 +1,16 @@
-document.getElementById("body").onscroll = function myFunction() {  
+document.getElementById("body").onscroll = resizeSlideshow;
+window.onload = resizeSlideshow;
+window.onresize = resizeSlideshow;
+
+function resizeSlideshow() {  
     var scrolltotop = document.scrollingElement.scrollTop;
-    var targets = document.getElementsByClassName("image-scroll");
-    var middle = targets[0].offsetHeight / 2;
-    var xvalue = -0.04 * scrolltotop - middle;
-    var factor = 0.2;
-    var yvalue = scrolltotop * factor;
-    for (var i = 0; i < targets.length; i++) {
-        targets[i].style.backgroundPosition = xvalue + "px " + yvalue + "px";
-    }
+    var target = document.getElementById("slideshow");
+    var width = target.offsetWidth;
+    var height = target.offsetHeight;
+    var xvalue = - (1368 - width) /2 - 0.04 * scrolltotop;
+    var factor = 0.04;
+    var yvalue = - (912 - height) / 2 - scrolltotop * factor;
+    
+    target.style.backgroundPosition = xvalue + "px " + yvalue + "px";
     
 }

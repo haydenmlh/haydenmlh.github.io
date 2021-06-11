@@ -169,11 +169,12 @@
     
     nav {
         justify-content: start;
+        height: 50px;
+        align-items: center;
     }
 
     nav #nav-buttons {
         display: flex;
-        height: 31px;
         flex-wrap: wrap;
         overflow: hidden;
     }
@@ -185,8 +186,8 @@
     nav .icon {
         float: left;
         display: block;
-        padding: 6px 15px 6px 15px;
-        margin: 0 5px 0 0;
+        padding: 15.5px 18px 15.5px 18px;
+        margin: 0 0 0 0;
         width: 14px;
     }
 
@@ -199,16 +200,16 @@
         display: block;
         margin-left: auto;
         flex-shrink: 1;
-        padding: 0 15px 0 0;
+        padding: 15.5px 15px 15.5px 0;
     }
     
     /* responsive change */
     nav.responsive {
         display: grid;
         grid-template-columns: 44px calc(100% - 44px - 156.94px) 156.94px;
-        grid-template-rows: 31px 31px 31px 31px 31px 31px 3px;
+        grid-template-rows: 50px 31px 31px 31px 31px 31px 3px;
         width: 100%;
-        height: 189px;
+        height: 208px;
         grid-template-areas: 
             "icon name name"
             "about about about"

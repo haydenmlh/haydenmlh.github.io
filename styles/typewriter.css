@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: calc(100vh - 100px); /* Adjust based on header height*/
+        height: min(100vh - 100px, 912px); /* Adjust based on header height*/
         width: min(100vw, 1200px);
         padding: 0 0 min(2vh, 25px) 0;
         margin: 0;
@@ -51,7 +51,7 @@
 } 
 
 /* Mobile CSS */
-@media (max-width: 499px) { 
+@media (max-width: 579px) { 
     .typewriter {
         height: calc(100vh - 31px);
     }
@@ -68,6 +68,6 @@
 } 
 
 /* Desktop CSS */
-@media (min-width: 500px) { 
+@media (min-width: 580px) { 
 
 }

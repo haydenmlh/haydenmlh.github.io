@@ -5,13 +5,13 @@
 
     #slideshow{
         width: 100%;
-        height: calc(100vh - 100px);
+        height: min(100vh - 100px, 912px);
         position: absolute;
         margin: 0;
         left: 0;
-        background-position: calc(-1 * (100vh - 100px) / 2) 0;
+        background-position: calc(-1 * (1368px - min(1200px, 100vw)) / 2) calc(-1 * (912px - min(100vh - 100px, 912px) / 2));
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
 
         animation-name: fadeinout;
         animation-timing-function: ease-in-out;
@@ -63,7 +63,7 @@
 }
 
 /* Mobile CSS */
-@media (max-width: 499px) {
+@media (max-width: 579px) {
     #slideshow{
         height: calc(100vh - 31px);
         background-position: calc(-1 * (100vh - 31px) / 2) 0;
@@ -71,11 +71,13 @@
 } 
 
 /* Desktop CSS */
-@media (min-width: 500px) { 
+@media (min-width: 580px) { 
 
 }
 
 /* Max Width Desktop CSS */
 @media (min-width: 1200px) { 
-
+    #slideshow{
+        background-position: calc(-1 * (1368px - min(1200px, 100vw)) / 2) 0px;
+    }
 }
