@@ -1,6 +1,8 @@
 /* General CSS - All screens */
 @media (min-width: 50px) {   
-    
+    #main-intro {
+        
+    }
 }
 
 /* Mobile CSS */
