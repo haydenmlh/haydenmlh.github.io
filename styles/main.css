@@ -4,17 +4,67 @@
         min-height: 100px;
         background: white;      
     }
-    
-    #main-intro {
-        padding: 0 auto;
-        display: flex;
 
+    #main-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:max-content;
     }
+
+    #main-intro-image-container {
+        padding: 0 15px 0 0;
+    }
+
+    #main-intro-image {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-image: url("/images/portrait.jpg");
+        background-size: cover;
+    }
+
+    #main-intro-text {
+        width: calc(100% - 215px - 30px);
+        padding: 20px 15px 20px 15px;
+        border-left: 1px solid #0b3c5d;
+        font-size: 16px;
+    }
+    .has-dropcap:first-letter {
+        font-family: 'Libre Baskerville', serif;
+        float: left;
+        font-size: 4em;
+        line-height: 0.65;
+        margin: 0.15em 0.02em 0.05em 0;
+      }
+      .indent{
+          text-indent: 1.5em;
+      }
+
+      #main-intro-text-p1 {
+          min-height: 4em;
+      }
+      #main-intro-text-p2 {
+          display: block;
+          margin: 0.5em 0 0 0;
+      }
 }
 
 /* Mobile CSS */
 @media (max-width: 579px) { 
+    #main-intro-image-container {
+        display: none;
+    }
+
+    #main-intro-image {
+        display: none;
+    }
     
+    #main-intro-text {
+        width: calc(100% - 110px - 5px);
+        padding: 20px 0;
+        border-style: none;
+    }
 } 
 
 /* Desktop CSS */
