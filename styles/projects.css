@@ -17,7 +17,7 @@
     .tile {
         background: rgb(216, 216, 216);
         float: left;
-        width: calc(100%/2 - 100vh * 0.027 - 1  0px);
+        width: calc(100%/2 - 100vh * 0.027 - 10px);
         height: calc(100%/2 - 100vh * 0.025);
         margin: 0 10px 12px 0;
         padding: max(10px, 1%);
@@ -50,7 +50,6 @@
         margin: 0;
         position: relative;
         height: auto;
-        font-family: 'Roboto', sans-serif;
         font-size: 15px;
     }
 
