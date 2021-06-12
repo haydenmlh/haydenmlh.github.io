@@ -36,18 +36,18 @@
         font-size: 4em;
         line-height: 0.65;
         margin: 0.15em 0.02em 0.05em 0;
-      }
-      .indent{
-          text-indent: 1.5em;
-      }
+    }
+    .indent{
+        text-indent: 1.5em;
+    }
 
-      #main-intro-text-p1 {
-          min-height: 4em;
-      }
-      #main-intro-text-p2 {
-          display: block;
-          margin: 0.5em 0 0 0;
-      }
+    #main-intro-text-p1 {
+        min-height: 4em;
+    }
+    #main-intro-text-p2 {
+        display: block;
+        margin: 0.5em 0 0 0;
+    }
 }
 
 /* Mobile CSS */
@@ -61,9 +61,17 @@
     }
     
     #main-intro-text {
-        width: calc(100% - 110px - 5px);
+        width: calc(100% - 20px);
         padding: 20px 0;
         border-style: none;
+    }
+
+    .has-dropcap:first-letter {
+        font-family: 'Libre Baskerville', serif;
+        float: left;
+        font-size: 4em;
+        line-height: 0.65;
+        margin: 0.22em 0.02em 0.06em 0;
     }
 } 
 

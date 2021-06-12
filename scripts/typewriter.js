@@ -51,19 +51,13 @@ editor_delays.push(editor_delays[editor_delays.length - 1] + cur2_edit_txts_lens
 editor_delays.push(editor_delays[editor_delays.length - 1] + delete_delay);
 
 
-
-
-var cur_1 = document.getElementById("welcome-2");
 var cur_2 = document.getElementById("welcome-1");
+var cur_1 = document.getElementById("welcome-2");
 
 
 
 function typeWriter() {
      if (i_type_2 < cur2_txt.length) {
-        if (cur_1.className == "current noselect") {
-            cur_1.className = "noselect";
-            cur_2.className = "current noselect";
-        }
         char_i = cur2_txt.charAt(i_type_2);
         cur_2.innerHTML += char_i;
         i_type_2++;
@@ -130,6 +124,10 @@ function typeWriter() {
         i_type_editor++;
         setTimeout(typeWriter, Math.floor(Math.random() * random_delay) + base_delay);
     } else if (i_type_1 < cur1_txt.length) {
+        if (cur_2.className == "current noselect") {
+            cur_2.className = "noselect";
+            cur_1.className = "current noselect";
+        }
 
         char_i = cur1_txt.charAt(i_type_1);
         cur_1.innerHTML += char_i;
