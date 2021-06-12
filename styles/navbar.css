@@ -33,7 +33,8 @@
     #content {
         min-height: calc(100vh - 100px - 20px);
         background: white;
-        width: 100%;
+        width: 96%;
+        padding: 0 2% 20px 2%;
     }
 
     #title {
@@ -47,15 +48,16 @@
     }
 
     footer {
+        height: 30px;
         flex-shrink: 0;
-        margin: 0;
         width: 100vw; 
         background: white;
     }
 
     footer p {
-        margin: 0;
+        height: 100%;
         text-align: center;
+        margin: 0 0 10px 0;
     }
     
     footer p::before {
@@ -273,7 +275,7 @@
     }
 
     #content {
-        width: clamp(580px, 100%, 1200px);
+        width: clamp(580px, 96%, 1200px);  /* minus 2% (padding)  */
     }
 
     footer {
@@ -281,7 +283,7 @@
     }
     
     /* Header CSS */
-    nav{
+    nav {
         width: clamp(580px, 100%, 1200px);
         padding: 0;
         height: 100px;
