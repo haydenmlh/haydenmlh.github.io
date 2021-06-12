@@ -1,7 +1,14 @@
 /* General CSS - All screens */
 @media (min-width: 50px) {   
+    #content {
+        min-height: 100px;
+        background: white;      
+    }
+    
     #main-intro {
-        
+        padding: 0 auto;
+        display: flex;
+
     }
 }
 
