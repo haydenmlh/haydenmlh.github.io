@@ -43,6 +43,7 @@
 
     #title-text {
         text-align: center;
+        white-space: nowrap;
     }
 
     footer {
