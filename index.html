@@ -18,31 +18,52 @@
         
         <title>Hayden's Homepage</title>
         <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico"/>
+
+        <!-- OpenGraph - Required Fields -->
+        <meta property="og:title" content="Hayden Mak - A Developer &amp; Computer Scientist" />
+        <meta property="og:description" content="Learn about Hayden Mak through his personal website!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/me_1.jpg" />
+        <meta property="og:url" content="https://haydenmlh.github.io" />
+
+        <!-- OpenGraph - Optional Fields -->
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BLLSR9Y1W"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-0BLLSR9Y1W');
+        </script>
+
     </head>
     <body id="body">
         <div id="pre-footer">
             <header class="noselect">
                 <nav id="buttons">
-                    <a href="/index.html" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
+                    <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
                     <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                     <div id="header-left" class="header-flanks">
-                        <a class="nav-link" href="/about.html" id="about-link">About</a></li>
-                        <a class="nav-link" href="/projects/index.html" id="projects-link" >Projects</a></li>
-                        <a class="nav-link" href="/blog/index.html" id="blog-link">Blog</a></li>
+                        <a class="nav-link" href="/about" id="about-link">About</a></li>
+                        <a class="nav-link" href="/projects" id="projects-link" >Projects</a></li>
+                        <a class="nav-link" href="/blog" id="blog-link">Blog</a></li>
                         
                     </div>
                     <div id="header-right" class="header-flanks">
-                        <a class="nav-link" href="/photography/index.html" id="photography-link">Photography</a></li>
-                        <a class="nav-link" href="/contact.html" id="contact-link">Contact</a></li>
+                        <a class="nav-link" href="/photography" id="photography-link">Photography</a></li>
+                        <a class="nav-link" href="/contact" id="contact-link">Contact</a></li>
                     </div>
 
-                    <a class="nav-link mobile" href="/about.html" id="about-link-mobile">About</a></li>
-                    <a class="nav-link mobile" href="/projects/index.html" id="projects-link-mobile" >Projects</a></li>
-                    <a class="nav-link mobile" href="/blog/index.html" id="blog-link-mobile">Blog</a></li>
-                    <a class="nav-link mobile" href="/photography/index.html" id="photography-link-mobile">Photography</a></li>                    
-                    <a class="nav-link mobile" href="/contact.html" id="contact-link-mobile">Contact</a></li>
+                    <a class="nav-link mobile" href="/about" id="about-link-mobile">About</a></li>
+                    <a class="nav-link mobile" href="/projects/index" id="projects-link-mobile" >Projects</a></li>
+                    <a class="nav-link mobile" href="/blog/index" id="blog-link-mobile">Blog</a></li>
+                    <a class="nav-link mobile" href="/photography/index" id="photography-link-mobile">Photography</a></li>                    
+                    <a class="nav-link mobile" href="/contact" id="contact-link-mobile">Contact</a></li>
                     <div class="mobile" id="responsive-bottom-border-mobile"></div>
 
                 </nav>
@@ -58,7 +79,8 @@
 
             <div id="content">            
                 <div id="main-intro">
-                    
+                    <div id="main-intro-image"></div>
+                    <div id="main-intro-text"></div>
                 </div>
             </div>
         </div>
