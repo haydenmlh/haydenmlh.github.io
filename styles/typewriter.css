@@ -44,10 +44,6 @@
         from, to { border-color: transparent }
         50% { border-color: white; }
     }
-
-    #content {
-        min-height: calc(40vh - 51px - min(2vh, 25px));
-    }
 } 
 
 /* Mobile CSS */
