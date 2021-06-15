@@ -8,7 +8,7 @@
         justify-content: center;
         height: min(100vh - 100px, 912px); /* Adjust based on header height*/
         width: min(100vw, 1200px);
-        padding: 0 0 min(2vh, 25px) 0;
+        padding: 0 0 20px 0;
         margin: 0;
     }
 

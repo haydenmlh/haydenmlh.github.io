@@ -30,8 +30,8 @@ for (var i = 0; i < cur2_edit_txts.length; i++){
 }
 
 
-var delete_delay = 14;
-var type_delay = 7;
+var delete_delay = 14;  /* Delay to wait before deleting */
+var type_delay = 7;  /* Delay to wait for before typing */
 
 editor_delays = [];
 editor_delays.push(type_delay)
@@ -114,7 +114,7 @@ function typeWriter() {
         
             i_edit_txt = 0;
 
-        } else if (i_type_editor < editor_delays[13]) {  // print 3rd cur_2_edit_txts
+        } else if (i_type_editor < editor_delays[13]) {  // print 4th cur_2_edit_txts
         
             cur_2.innerHTML += cur2_edit_txts[3].charAt(i_edit_txt);
             i_edit_txt++;

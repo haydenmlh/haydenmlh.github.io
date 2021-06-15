@@ -35,7 +35,7 @@
         float: left;
         font-size: 4em;
         line-height: 0.65;
-        margin: 0.15em 0.02em 0.05em 0;
+        margin: 0.22em 0.02em 0.06em 0;
     }
     .indent{
         text-indent: 1.5em;
@@ -65,18 +65,15 @@
         padding: 20px 0;
         border-style: none;
     }
-
-    .has-dropcap:first-letter {
-        font-family: 'Libre Baskerville', serif;
-        float: left;
-        font-size: 4em;
-        line-height: 0.65;
-        margin: 0.22em 0.02em 0.06em 0;
-    }
 } 
 
 /* Desktop CSS */
 @media (min-width: 580px) { 
+
+    #main-intro {
+        width: clamp(calc(580px - 4%), 100%, 1000px);  /* minus 2% (padding)  */
+    }
+
 }
 
 /* Max Width Desktop CSS */
