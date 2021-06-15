@@ -31,7 +31,7 @@
     }
 
     #content {
-        min-height: calc(100vh - 100px - 20px);
+        min-height: calc(100vh - 100px - 30px - 20px); /* header, footer, padding */
         background: white;
         width: 96%;
         padding: 0 0 20px 0;
@@ -68,7 +68,11 @@
         background: #0b3c5dd2;
         font-size: 12px;
         padding: 2px 2px;
-        margin: 0 3px;
+        margin: 0;
+    }
+
+    #content-header-img-credits a, a:visited, a:link, a:active {
+        color: white;
     }
 
     /* Soon to be deprecated for content-header-img */
@@ -189,7 +193,7 @@
 
 @media (max-width: 579px) {
     #content {
-        min-height: calc(100vh - 50px - 20px);
+        min-height: calc(100vh - 50px - 30px - 20px); /* header, footer, padding */
         background: white;
     }
 
