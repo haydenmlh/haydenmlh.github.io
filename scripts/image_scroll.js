@@ -3,7 +3,7 @@ window.onresize = resizeSlideshow;
 
 function resizeSlideshow() {  
     var scrolltotop = document.scrollingElement.scrollTop;
-    var target = document.getElementById("slideshow");
+    var target = document.getElementsByClassName("image-scroll")[0];
     var width = target.offsetWidth;
     var height = target.offsetHeight;
     var xvalue = - (1368 - width) /2 - 0.04 * scrolltotop;
@@ -11,14 +11,6 @@ function resizeSlideshow() {
     var yvalue = - (912 - height) / 2 - scrolltotop * factor;
     
     target.style.backgroundPosition = xvalue + "px " + yvalue + "px";
-    
-}
-
-function preLoader() {
-    document.getElementById("preload-01").style.background = 'url("/images/me_2.jpg") no-repeat -9999px -9999px';
-    document.getElementById("preload-02").style.background = 'url("/images/me_3.jpg") no-repeat -9999px -9999px';
-    document.getElementById("preload-03").style.background = 'url("/images/me_4.jpg") no-repeat -9999px -9999px';
 }
 
 resizeSlideshow();
-preLoader();

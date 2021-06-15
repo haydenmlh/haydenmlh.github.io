@@ -1,0 +1,32 @@
+/* General CSS - All screens */
+@media (min-width: 50px) {     
+    #content {
+        min-height: calc(100vh - 100px - 30px - 20px); /* header, footer, padding */
+    }
+
+    #content-header-img {
+        background-image: url("/images/availability.jpg");
+    }
+
+    #availability-sheets {
+        width: clamp(300px, 100%, 798px);
+        min-height: 602px;
+    }
+}
+
+/* Mobile CSS */
+@media (max-width: 579px) { 
+    #content {
+        min-height: calc(100vh - 50px - 30px - 20px); /* header, footer, padding */
+    }
+} 
+
+/* Desktop CSS */
+@media (min-width: 580px) { 
+
+}
+
+/* Max Width Desktop CSS */
+@media (min-width: 1200px) { 
+
+}
