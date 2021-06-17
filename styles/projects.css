@@ -17,7 +17,7 @@
     }
 
     .tile {
-        background: rgb(216, 216, 216);
+        background: #e2e8e9;
         float: left;
         width: calc(100%/2 - 100vh * 0.027 - 10px);
         height: calc(100%/2 - 100vh * 0.025);
@@ -56,6 +56,14 @@
         font-size: 15px;
     }
 
+    .tile-description-paragraph {
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+
+    .tile-date {
+        text-align: right;
+    }
     /* End of vertical table */
 } 
 
