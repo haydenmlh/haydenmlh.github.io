@@ -14,7 +14,7 @@ var cur1_txt = 'Have a very nice day!';
 
 var cur2_txt = "I am a ";
 var cur2_edit_txt_1 = "Computer Scientist";
-var cur2_edit_txt_2 = "full-stack developer";
+var cur2_edit_txt_2 = "developer";
 var cur2_edit_txt_3 = "photography lover";
 var cur2_edit_txt_4 = "Hayden Mak.";
 
