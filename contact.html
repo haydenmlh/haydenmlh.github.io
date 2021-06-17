@@ -13,8 +13,6 @@
 
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="/scripts/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- Title and Default Metadata -->
         <title>Hayden Mak - Contact</title>
@@ -81,21 +79,61 @@
             <div id="content">      
                 <div id="content-header-img" class="image-scroll">
                     <div id="content-header-img-description">Contact</div>
-                    <div id="content-header-img-credits">Photo by <a href="https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luca Bravo</a> on <a href="https://unsplash.com/s/photos/contact?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    <div id="content-header-img-credits">
+                        Photo by <a href="https://unsplash.com/@anete_lusina?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anete Lūsiņa</a> on <a href="https://unsplash.com/s/photos/laptop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </div>
                 </div>
-                <div id="content-text">
-                    <div id="content-social-title">
-                        Connect with Hayden on <a href="https://www.linkedin.com/in/haydenmlh/">LinkedIn</a> or find about more about his projects on <a href="https://github.com/haydenmlh">GitHub</a>!
-                    </div>
+                <div id="content-form">
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScba3recrtFr1aElcyWgxCTKg1cTX-JL414N2PJ7BeKwEGe8g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div id="content-form-name">
+                            <div id="content-form-first-name" class="form-fieldlabel">
+                                <label for="entry.62324589" class="form-name first-label">First Name:</label>
+                                <input type="text" name="entry.62324589" id="entry.62324589" required>
+                            </div>
+                            <div id="content-form-last-name" class="form-fieldlabel-2">
+                                <label for="entry.1495869695" class="form-name second-label">Last Name:</label>
+                                <input type="text" name="entry.1495869695" id="entry.1495869695" required>
+                            </div>
+                        </div>
+                        <div id="content-form-email-and-category">
+                            <div id="content-form-email" class="form-fieldlabel">
+                                <label for="entry.1113174291" class="form-email-category first-label">Email:</label>
+                                <input type="email" name="entry.1113174291" id="entry.1113174291" required>
+                            </div>
+                            <div id="content-form-category" class="form-fieldlabel-2">
+                                <label for="entry.383804575" class="form-email-category second-label">Category:</label>
+                                <select name="entry.383804575" id="entry.383804575" required>
+                                    <option value="General Enquiry">General Enquiry</option>
+                                    <option value="Photography Enquiry">Photography Enquiry</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="content-form-message">
+                            <label for="entry.955795602" class="first-label">Message:</label>
+                            <textarea name="entry.955795602" id="entry.955795602" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 </div>
             </div>
-        </div> 
+        </div>
 
-        <footer><p></p></footer>
+        <footer>
+            <p id="footer-contact">
+                Connect with Hayden on <a href="https://www.linkedin.com/in/haydenmlh/">LinkedIn</a> or <a href="https://github.com/haydenmlh">GitHub</a>!
+            </p>
+            <p id="footer-copyright"></p>
+        </footer>
     </body>
+
     <!-- Load jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Load the scripts -->
     <script src="/scripts/navbar.js" defer></script>
+    <script src="/scripts/content_header_scroll.js" defer></script>
+    <script src="/scripts/contact_form.js" defer></script>
+
 </html>
