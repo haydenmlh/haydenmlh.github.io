@@ -3,6 +3,21 @@
     #content-header-img {
         background-image: url("/images/page_headers/projects.jpg");
     }
+    #content-paragraph {
+        width: 96%;
+        margin: 0 2%;
+        position: relative;
+        max-width: 1000px;
+    }
+    p {
+        margin: 5px 0 10px 0;
+    }
+    #color-scheme img{
+        display: inline;
+        margin: 5px 10px 0 10px;
+        float: right;
+        height: 200px;
+    }
 }
 
 /* Mobile CSS */
