@@ -4,6 +4,10 @@
         text-decoration: none;
     }
 
+    #content-header-img {
+        background-image: url("/images/page_headers/projects.jpg");
+    }
+
     #content {
         display: flex;
         flex-direction: column;
