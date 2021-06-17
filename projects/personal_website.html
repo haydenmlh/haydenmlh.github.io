@@ -8,7 +8,7 @@
 
         <!-- Fonts and CSS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Open+Sans&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/navbar.css">
         <link rel="stylesheet" href="/styles/projects/personal_website.css">
 
@@ -87,32 +87,74 @@
                 </div>
                 <div class="back_to_projects"></div>
                 <div id="content-paragraph">
-                    <div id="color-scheme">
-                        <img src="/images/projects/personal_website/color_scheme.jpg">
-                    </div>
-                    <p>
+                    <p id="process-title" class="paragraph-title">Initial Progress</p>
+                    <p id="content-first-paragraph">
+                        <div id="color-scheme">
+                            <img src="/images/projects/personal_website/color_scheme.jpg">
+                            <div class="img-caption">- Elegant and <br>Sophisticated <br> Color Scheme</div>
+                        </div>
                         The primary purpose of my personal website is to showcase my programming projects and photography.
                         To achieve this, I began the website design by splitting my navigation into several 
                         subsections, namely Home, About, Projects, Photography, Blog and Contact. 
                         After browsing <a href="https://www.canva.com/learn/website-color-schemes/">an article</a> on Canva
                         about website color schemes, I decided to incorporate the 
                         No.11 Elegant and Sophisticated colour scheme from the article for my website, as seen on the 
-                        right.
-                        
-                    </p>                    
-                    <p>
+                        right. I used the colors for the text on the website, as well as for some backgrounds behind the text.
+                    </p>
+                    <p id="content-second-paragraph">
+                        <div id="initial-website">
+                            <img id="initial-website-img" src="/images/projects/personal_website/initial_design.jpg">
+                            <div class="img-caption">- Initial prototype of personal website</div>
+                        </div>
                         I then proceeded to
-                        design the navigation bar and make it responsive for mobile and desktop. 
-                        Through designing the responsive part for mobile, I learnt about how to add
-                        metadata to the head to make the website display on mobile properly. I also resized
-                        different elements through CSS and Javascript to maneuver them into an aesthetically
-                        pleasing layout. The process involved a lot of using the latest CSS3 technologies including
+                        design the navigation bar to make it responsive for mobile and desktop. 
+                        I learnt about how use media queries and how to set the appropriate metadata for mobile viewing. 
+                        I also resized
+                        different elements through CSS and Javascript to maneuver them into aesthetically
+                        pleasing layouts. The process involved a lot of using the latest CSS3 technologies including
                         flex and grid display, as well as dynamic resizing based on viewport size using Javascript.
                     </p>
-                    <p>
-                        After seeking out constructive criticism from close friends, I changed the look and 
-                        colors of the website for a cleaner, more minimalistic style.
+
+                    <p id="inspiration-title" class="paragraph-title">Current Design Inspiration</p>
+
+                    <p id="content-third-paragraph">
+                        After seeking out constructive criticism of my first rough layout from close friends 
+                        (credits to <a href="https://github.com/loukos-scheffer">Loukos Scheffer</a>),
+                        I decided to change the look and 
+                        colors of the website from my colorful tabs format to a cleaner, more modern style. 
+                        I looked around at the current design language for personal websites using 
+                        <a href="https://www.themuse.com/advice/the-35-best-personal-websites-weve-ever-seen">this article</a> 
+                        from The Muse, and took inspiration from various personal websites from the article, including
+                        <a href="https://www.rhiannonnavin.com/">Rhiannon Navin's site</a>, 
+                        <a href="https://www.orestisgeorgiou.com/">Dr. Orestis Georgiou's site</a>, and 
+                        <a href="https://www.nathanielkoloc.com/">Nathaniel Koloc's site</a>.
+                        Drawing inspiration from these websites, I eventually settled on 
+                        minmalistic aesthetic for the colors and navigation bar.
                     </p>
+
+                    <p id="inspiration-title" class="paragraph-title">Lessons Learnt</p>
+
+                    <p id="content-fourth-paragraph">
+                        <div id="constructive-criticism">
+                            <img id="constructive-criticsm-img" src="/images/projects/personal_website/constructive_criticsm.png">
+                            <div class="img-caption">- Constructive criticism was very useful for my design process</div>
+                        </div>
+                        Through coding this website, I have learned that seeking constructive criticism is very
+                        important in order to generate new ideas and inspiration. Before receiving my friend's opinion,
+                        I had the feeling that something was wrong with the layout but I was not able to pinpoint it 
+                        and determine what exactly was off. After discussing with my close friend, he was able to
+                        provide valuable input on the problems with the previous design, helping me form a broader
+                        view of the shortcomings of my website.
+                    </p>
+
+                    <p id="content-fifth-paragraph">
+                        I have also gained the understanding that front-end development requires a good
+                        eye for visuals and design. I will seek to improve my artistic ability by understanding 
+                        current industry
+                        practices, reading popular design blogs and most importantly, making my own projects to practice
+                        applying the knowledge I have gained from others.
+                    </p>
+
                 </div>
                 <div class="back_to_projects"></div>
             </div>
@@ -129,7 +171,6 @@
     <!-- Load jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Load the scripts -->
-    <script src="/scripts/main.js" defer></script>
     <script src="/scripts/navbar.js" defer></script> 
     <script src="/scripts/content_header_scroll.js" defer></script>
 </html>

@@ -6,31 +6,95 @@
     #content-paragraph {
         width: 96%;
         margin: 0 2%;
-        position: relative;
         max-width: 1000px;
     }
     p {
         margin: 5px 0 10px 0;
     }
+    img {
+        margin: 5px 0 0 0;
+    }
+    .img-caption {
+        font-size: 0.75em;
+    }
+    .paragraph-title {
+        font-size: 20px;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+    }
     #color-scheme img{
-        display: inline;
-        margin: 5px 10px 0 10px;
-        float: right;
+        width: 87px;
         height: 200px;
+    }
+    #initial-website img {
+        width: 250px;
+    }
+    #constructive-criticism img {
+        width: 300px;
     }
 }
 
 /* Mobile CSS */
-@media (max-width: 579px) { 
+@media (max-width: 579px) {
+    .img-caption {
+        font-size: 12px;
+    }
+    .paragraph-title {
+        font-size: 16px;
+    }
+    #color-scheme{
+        float: right;
+        margin: 0 0 0 10px;
+    }
+    #initial-website {
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    #constructive-criticism {
+        float: right;
+        margin: 0 0 0 10px;
+    }
+} 
 
+/* Super Tiny Mobile CSS */
+@media (max-width: 579px) {
+    .img-caption {
+        font-size: 12px;
+    }
+    .paragraph-title {
+        font-size: 16px;
+    }
+    #color-scheme{
+        float: right;
+        margin: 0 0 0 10px;
+    }
+    #initial-website {
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    #constructive-criticism {
+        float: right;
+        margin: 0 0 0 10px;
+    }
 } 
 
 /* Desktop CSS */
 @media (min-width: 580px) { 
-
+    #color-scheme{
+        float: right;
+        margin: 0 0 0 15px;
+    }
+    #initial-website {
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    #constructive-criticism {
+        float: right;
+        margin: 0 0 0 15px;
+    }
 }
 
 /* Max Width Desktop CSS */
 @media (min-width: 1200px) { 
-
+    
 }
