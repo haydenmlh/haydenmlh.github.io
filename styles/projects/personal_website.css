@@ -1,0 +1,21 @@
+/* General CSS - All screens */
+@media (min-width: 50px) {     
+    #content-header-img {
+        background-image: url("/images/page_headers/projects.jpg");
+    }
+}
+
+/* Mobile CSS */
+@media (max-width: 579px) { 
+
+} 
+
+/* Desktop CSS */
+@media (min-width: 580px) { 
+
+}
+
+/* Max Width Desktop CSS */
+@media (min-width: 1200px) { 
+
+}
