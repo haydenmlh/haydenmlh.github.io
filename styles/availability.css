@@ -1,8 +1,5 @@
 /* General CSS - All screens */
-@media (min-width: 50px) {     
-    #content {
-        min-height: calc(100vh - 100px - 30px - 20px); /* header, footer, padding */
-    }
+@media (min-width: 50px) {
 
     #content-header-img {
         background-image: url("/images/availability.jpg");
@@ -16,9 +13,6 @@
 
 /* Mobile CSS */
 @media (max-width: 579px) { 
-    #content {
-        min-height: calc(100vh - 50px - 30px - 20px); /* header, footer, padding */
-    }
 } 
 
 /* Desktop CSS */

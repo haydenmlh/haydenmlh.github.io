@@ -34,7 +34,7 @@
     }
 
     #content {
-        min-height: calc(100vh - 100px - 30px - 20px); /* header, footer, padding */
+        min-height: calc(100vh - 100px - 55px - 20px); /* header, footer, padding */
         background: white;
         width: 100%;
         padding: 0 0 20px 0;
@@ -46,6 +46,7 @@
     #content-header-img {
         width: 100%;
         min-height: 30vh;
+        max-height: 600px;
         background-repeat: no-repeat;
         background-size: auto;
         position: relative;        
@@ -91,21 +92,29 @@
     /* End soon to be deprecated title */
 
     footer {
-        height: 30px;
+        height: 100%;
         flex-shrink: 0;
-        width: 100vw; 
+        width: 100%; 
         background: white;
+        display: flex;
+        flex-direction: column;
     }
 
     footer p {
         height: 100%;
-        text-align: center;
-        margin: 0 0 10px 0;
+        padding: 0 2%;
     }
-    
-    footer p::before {
-        content: "© 2021 Hayden Mak";
-    }   
+
+    #footer-contact {
+        margin: 10px 0 2px 0;
+    }
+    #footer-copyright {
+        font-size: 0.9em;
+        margin: 0 0 5px 0;
+    }    
+    #footer-copyright::after {
+        content: "Copyright © Hayden Mak 2021";
+    }
 
     /* Header CSS  - 31px tall */
     header {
@@ -196,12 +205,13 @@
 
 @media (max-width: 579px) {
     #content {
-        min-height: calc(100vh - 50px - 30px - 20px); /* header, footer, padding */
+        min-height: calc(100vh - 50px - 55px - 20px); /* header, footer, padding */
         background: white;
     }
 
     footer {
-        width: min(100vw, 579px);
+        width: min(96%, 579px);
+        margin: 0 2%;
     }
     #title {
         margin: 0;
