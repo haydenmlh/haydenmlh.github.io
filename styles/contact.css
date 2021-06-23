@@ -9,6 +9,7 @@
     }
     select, input {
         height: 30px;
+        border: 1px solid #1d2731;
     }
     label {
         width: 77px;
@@ -58,6 +59,13 @@
     input[type="submit"] {
         width: 77px;
         margin: 10px 0 0 1px;
+        border-radius: 3px;
+        box-shadow: none;
+        text-shadow: none;
+        background: #a1d9fc;
+    }
+    input[type="submit"]:hover {
+        background: #7ecbf8;
     }
 }
 
