@@ -2,59 +2,14 @@
     h1 {
         text-align: center;
     }
-
-    .photo-display {
-        margin: 0px 15px 10px 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .tile {
-        background: rgb(216, 216, 216);
-        float: left;
-        position: relative;
-        width: 31%;
-        margin: 7px 2% 7px 0;
-        height: 0;
-        padding: 31% 0 0 0;
-    }
-
-    .tile-content {
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        margin: 5% 5%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    #content-header-img {
+        background-image: url("/images/page_headers/photography.jpg");
     }
 
     /* End of vertical table */
 } 
 @media (max-width: 499px) { /* for only styles between 320px and 768px (most mobile devies) */
-    .tile {
-        background: rgb(216, 216, 216);
-        float: left;
-        position: relative;
-        width: 48%;
-        margin: 7px 2% 7px 0;
-        height: 0;
-        padding: 48% 0 0 0;
-    }
-
-    .tile-content {
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        margin: 5% 5%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+    
 } 
 @media (min-width: 500px) { /* general desktop && tablet styles if needed */
 
