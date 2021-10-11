@@ -5,12 +5,18 @@
     #content-header-img {
         background-image: url("/images/page_headers/photography.jpg");
     }
+} 
+/* Mobile CSS */
+@media (max-width: 579px) { 
 
-    /* End of vertical table */
 } 
-@media (max-width: 499px) { /* for only styles between 320px and 768px (most mobile devies) */
-    
-} 
-@media (min-width: 500px) { /* general desktop && tablet styles if needed */
+
+/* Desktop CSS */
+@media (min-width: 580px) { 
+
+}
+
+/* Max Width Desktop CSS */
+@media (min-width: 1200px) { 
 
 }
