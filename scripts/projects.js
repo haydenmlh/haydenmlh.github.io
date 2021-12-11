@@ -1,7 +1,7 @@
 function changeWrapperHW() {
     var tiles=document.getElementsByClassName('tile');
     var tile_titles = document.getElementsByClassName('tile-title');
-    var tile_langs = document.getElementsByClassName('tile-lang')
+    var tile_langs = document.getElementsByClassName('tile-lang');
     var tile_descs = document.getElementsByClassName('tile-description');
     
     for (i = 0; i < tiles.length; i++) {
