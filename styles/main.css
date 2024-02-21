@@ -17,10 +17,10 @@
     }
 
     #main-intro-image {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
-        background-image: url("/images/portrait.jpg");
+        background-image: url("/images/coding_bg.jpg");
         background-size: cover;
     }
 
@@ -30,13 +30,7 @@
         border-left: 1px solid #0b3c5d;
         font-size: 16px;
     }
-    .has-dropcap:first-letter {
-        font-family: 'Libre Baskerville', serif;
-        float: left;
-        font-size: 4em;
-        line-height: 0.65;
-        margin: 0.22em 0.02em 0.06em 0;
-    }
+    
     .indent{
         text-indent: 1.5em;
     }
