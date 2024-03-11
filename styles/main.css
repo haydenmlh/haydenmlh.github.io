@@ -1,8 +1,7 @@
 /* General CSS - All screens */
 @media (min-width: 50px) {   
     #content {
-        min-height: 100px;
-        background: white;      
+        background: white;
     }
 
     #main-intro {
@@ -10,6 +9,7 @@
         justify-content: center;
         align-items: center;
         height:max-content;
+        padding: 0 0 30px 0;
     }
 
     #main-intro-image-container {
@@ -17,53 +17,115 @@
     }
 
     #main-intro-image {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
-        background-image: url("/images/portrait.jpg");
-        background-size: cover;
+        background-image: url("/images/about.png");
+        background-size: contain;
     }
 
-    #main-intro-text {
-        width: calc(100% - 215px - 30px);
+    #main-projects-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-image: url("/images/projects.png");
+        background-size: contain;
+    }
+
+    #main-photo-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-image: url("/images/photos.png");
+        background-size: contain;
+    }
+
+    .main-text-div {
+        width: calc(100% - 180px - 30px);
         padding: 20px 15px 20px 15px;
         border-left: 1px solid #0b3c5d;
         font-size: 16px;
     }
-    .has-dropcap:first-letter {
-        font-family: 'Libre Baskerville', serif;
-        float: left;
-        font-size: 4em;
-        line-height: 0.65;
-        margin: 0.22em 0.02em 0.06em 0;
-    }
+    
     .indent{
         text-indent: 1.5em;
     }
 
-    #main-intro-text-p1 {
-        min-height: 4em;
+    .intro-text {
+        margin: 0.5em 0;
     }
-    #main-intro-text-p2 {
-        display: block;
-        margin: 0.5em 0 0 0;
+
+    h1, h2, p {
+        margin: 0;
     }
+
+    hr {
+        color: #0b3c5d;
+        border-top-style: solid;
+    }
+
+    .project-div {
+        padding: 15px 0 15px 0;
+    }
+
+    .project-title-div {
+        display:flex;
+        justify-content:space-between;
+        margin: 0 0 5px 0;
+    }
+
+    .project-image-div {
+        display:flex;
+        justify-content:center;
+    }
+    
 }
 
 /* Mobile CSS */
 @media (max-width: 579px) { 
-    #main-intro-image-container {
-        display: none;
+    
+
+    #main-intro {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-text-div {
+        width: calc(100% - 20px);
+        padding: 20px 0;
+        margin: 20px 0 0 0;
+        border-style: none;
+        border-top: 1px solid #0b3c5d;
     }
 
     #main-intro-image {
-        display: none;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("/images/about.png");
+        background-size: contain;
     }
-    
-    #main-intro-text {
+
+    #main-projects-image {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("/images/projects.png");
+        background-size: contain;
+    }
+
+    .project-div {
         width: calc(100% - 20px);
         padding: 20px 0;
         border-style: none;
+    }
+
+    #main-photo-image {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url("/images/photos.png");
+        background-size: contain;
     }
 } 
 

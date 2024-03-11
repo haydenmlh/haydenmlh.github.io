@@ -1,6 +1,10 @@
 document.getElementById("body").onscroll = resizeContentHeader;
 window.onresize = resizeContentHeader;
 
+// Resizes the content header image to give a parralax effect
+// use content-header-img id to specify the image.
+
+
 function resizeContentHeader() {  
     var scrolltotop = document.scrollingElement.scrollTop;
     var target = document.getElementById("content-header-img");

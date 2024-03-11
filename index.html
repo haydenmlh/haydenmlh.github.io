@@ -55,16 +55,23 @@
         <div id="pre-footer">
             <header class="noselect">
                 <nav id="buttons">
-                    <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
+                    <!-- Typewriter title only on main page to avoid too much effects -->
+                    <a href="/" id="name-link"><h1 id="header-name" class="name-typewriter"></h1></a>
+                    
+                    <!-- No typing effect -->
+                    <!-- <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a> -->
+
+                    <!-- Mobile menu icon -->
                     <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
+
                     <div id="header-left" class="header-flanks">
-                        <a class="nav-link" href="/about" id="about-link">About</a></li>
+                        <a class="nav-link" href="/resume" id="about-link">Resume</a></li>
                         <a class="nav-link" href="/projects" id="projects-link" >Projects</a></li>
-                        <a class="nav-link" href="/blog" id="blog-link">Blog</a></li>
                         
                     </div>
+
                     <div id="header-right" class="header-flanks">
                         <a class="nav-link" href="/photography" id="photography-link">Photography</a></li>
                         <a class="nav-link" href="/contact" id="contact-link">Contact</a></li>
@@ -72,39 +79,121 @@
 
                     <a class="nav-link mobile" href="/about" id="about-link-mobile">About</a></li>
                     <a class="nav-link mobile" href="/projects" id="projects-link-mobile" >Projects</a></li>
-                    <a class="nav-link mobile" href="/blog" id="blog-link-mobile">Blog</a></li>
-                    <a class="nav-link mobile" href="/photography" id="photography-link-mobile">Photography</a></li>                    
+                    <a class="nav-link mobile" href="https://www.instagram.com/haydenmlh.photography" id="photography-link-mobile">Photography</a></li>                    
                     <a class="nav-link mobile" href="/contact" id="contact-link-mobile">Contact</a></li>
                     <div class="mobile" id="responsive-bottom-border-mobile"></div>
 
                 </nav>
             </header>
             
-            <div class="typewriter">
-                <div id="slideshow"></div>
-
-                <h1 id="welcome-1" class="current noselect"></h1>
-                <h1 id="welcome-2" class="noselect"></h1>
-            </div>
 
             <div id="content">            
                 <div id="main-intro">
-                    <div id="main-intro-image-container">
+                    <div id="main-intro-image-container" class="left-column">
                         <div id="main-intro-image"></div>
                     </div>
-                    <div id="main-intro-text">
-                        <div id="main-intro-text-p1" class="has-dropcap"> 
-                            Hayden Mak is a third year Computer Science and Economics major at the University of 
-                            Toronto. He currently works as the Photos Editor at the Medium, the university's student
-                            newspaper.
+                    <div class="main-text-div">
+                        <div class="intro-text"> 
+                            Hi, I'm Hayden. I'm in my final year studying a Computer Science and Economics double major at the University of 
+                            Toronto.
+                            I am actively looking for software development related positions after graduation.
+                            In my free time, I enjoys playing table tennis, tennis and playing casual video games like Mario Kart and a browser game called MouseHunt.
+                        </div>
+                        <div class="intro-text">
+                            You can find my resume <a href="/resume">here</a>.
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="main-intro">
+                    <div id="main-intro-image-container" class="left-column">
+                        <div id="main-projects-image"></div>
+                    </div>
+                    <div class="main-text-div">
+                        <div class="project-div"> 
+                            <div class="project-title-div">
+                                <div class="project-title-left-div">
+                                    <p class="project-title"><b>Smart Grocery App</b></p>
+                                    <p class="project-frameworks">Frameworks: Flutter, Django, SQLite</p>
+                                </div>
+                                <div class="project-title-left-div">
+                                    <p class="project-links"><a href="https://github.com/haydenmlh/Smart-Grocery-Map-and-Inventory">GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="project-image-div">
+                                <!-- <img src="" class="project-img" alt="project-image"> -->
+                            </div>
+                            <p class="project-description">
+                                I worked with a team of seven using Agile methodology to create an app to simplify grocery shopping. We Developed extensive REST API using Django and SQLite and cross-platform front-end using Flutter.
+                                I contributed to the backend routing through the store, user registration and authentication, and frontend for mapping and displaying store inventory to the customer.
+                                Our team used story point estimation using Fibonacci and scrum poker method.
+                                I coordinated and ran twice a week standups, biweekly sprints and sprint retrospectives for the four sprints.
 
-                            He is currently learning more about
-                            web development and lighting in portrait photography.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <div class="project-div"> 
+                            <div class="project-title-div">
+                                <div class="project-title-left-div">
+                                    <p class="project-title"><b>CatchTheClimate App</b></p>
+                                    <p class="project-frameworks">Framework: React Native</p>
+                                </div>
+                                <div class="project-title-left-div">
+                                    <p class="project-links"><a href="https://github.com/haydenmlh/CatchTheClimate">GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="project-image-div">
+                                <!-- <img src="" class="project-img" alt="project-image"> -->
+                            </div>
+                            <p class="project-description">
+                                Developed a front-end React Native app which queries and displays weather data from OpenWeatherAPI
+                                Implemented search function by city or zip code and queried API based on input
+                                Shortened time to display data by 70% by using local storage to store the last-searched city and cache 
+                                weather data using react-native-mmkv-storage
+                            </p>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="project-div"> 
+                            <div class="project-title-div">
+                                <div class="project-title-left-div">
+                                    <p class="project-title"><b>Schmart App | Hack The Valley 5 - 1st Place</b></p>
+                                    <p class="project-frameworks">Frameworks: React Native, Flask</p>
+                                </div>
+                                <div class="project-title-left-div">
+                                    <p class="project-links"><a href="https://github.com/Shmart-app">GitHub</a> | <a href="https://devpost.com/software/schmart">Devpost</a></p>
+                                </div>
+                            </div>
+                            <div class="project-image-div">
+                                <!-- <img src="" class="project-img" alt="project-image"> -->
+                            </div>
+                            <p class="project-description">
+                                Designed and implemented a barcode scanner which scanned objects and queried a nutrition API to obtain the nutritional information about the object and dynamically updated a chart
+                                Worked on the user registration and login authentication in the frontend using React Native and backend using Flask, creating a system to register and log in
+
+                            </p>
+                        </div>
+
+
+
+                        <hr>
+                        <a href="/projects">More Projects</a>
+                    </div>
+                </div>
+
+                <div id="main-intro">
+                    <div id="main-intro-image-container" class="left-column">
+                        <div id="main-photo-image"></div>
+                    </div>
+                    <div class="main-text-div">
+                        <div id="main-intro-text-p1"> 
+                            I enjoy taking photographs from time to time as a hobby. To see some of my photos, you can check out my Instagram page, <a href="https://www.instagram.com/haydenmlh.photography">@haydenmlh.photography</a>.
                         </div>
                         <div id="main-intro-text-p2" class="indent">
-                            One of his biggest hobbies is table tennis, which he plays whenever he has free time
-                            at the RAWC at UTM. He also enjoys going on walks, tennis, and 
-                            rock climbing.
+                            
                         </div>
                     </div>
                 </div>
@@ -129,5 +218,4 @@
     <script src="/scripts/main.js" defer></script>
     <script src="/scripts/navbar.js" defer></script>
     <script src="/scripts/typewriter.js" defer></script>
-    <script src="/scripts/preloader_main.js" defer></script>
 </html>

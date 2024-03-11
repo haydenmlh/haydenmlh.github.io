@@ -34,10 +34,10 @@
     }
 
     #content {
-        min-height: calc(100vh - 100px - 55px - 30px); /* header, footer, padding */
+        min-height: calc(100vh - 100px - 55px); /* header, footer, padding */
         background: white;
         width: 100%;
-        padding: 0 0 30px 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -113,7 +113,7 @@
         margin: 0 0 5px 0;
     }    
     #footer-copyright::after {
-        content: "Copyright © Hayden Mak 2021";
+        content: "Copyright © Hayden Mak 2024";
     }
 
     /* Header CSS  - 31px tall */
@@ -271,7 +271,6 @@
             "about about about"
             "projects projects projects"
             "photos photos photos"
-            "blog blog blog"
             "contact contact contact"
             "line line line";
     }
@@ -294,10 +293,7 @@
         grid-area: photos;
         display:block;
     }
-    nav.responsive #blog-link-mobile {
-        grid-area: blog;
-        display:block;
-    }
+    
     nav.responsive #contact-link-mobile {
         grid-area: contact;
         display:block;
@@ -340,7 +336,7 @@
         width: clamp(580px, 100%, 1200px);
         padding: 0;
         height: 100px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;        
     }
 
