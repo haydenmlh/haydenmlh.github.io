@@ -7,7 +7,7 @@ var i_type_2 = 0;
 var i_type_editor = 0;
 var i_edit_txt = 0;
 var char_i;
-var base_delay = 40;
+var base_delay = 50;
 var random_delay = 40;
 
 var cur1_txt = 'Have a very nice day!';
