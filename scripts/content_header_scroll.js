@@ -5,7 +5,7 @@ window.addEventListener("resize", resizeContentHeader);
 // use content-header-img id to specify the image.
 
 
-function resizeContentHeader() {  
+function resizeContentHeader() {
     var target = document.getElementById("content-header-img");
     if (!target) {
         return;
@@ -15,10 +15,10 @@ function resizeContentHeader() {
 
     var elt_width = target.offsetWidth;
     var elt_height = target.offsetHeight;
-    var xvalue = - (1368 - elt_width) /2 - 0.04 * scrolltotop;
+    var xvalue = -(1368 - elt_width) / 2 - 0.04 * scrolltotop;
     var factor = 0.04;
-    var yvalue = - (912 - elt_height) / 2 - scrolltotop * factor;
-    
+    var yvalue = -(912 - elt_height) / 2 - scrolltotop * factor;
+
     target.style.backgroundPosition = xvalue + "px " + yvalue + "px";
 }
 
