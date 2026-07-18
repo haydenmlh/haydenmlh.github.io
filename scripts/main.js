@@ -1,9 +1,13 @@
-document.getElementById("body").onscroll = resizeSlideshow;
-window.onresize = resizeSlideshow;
+window.addEventListener("scroll", resizeSlideshow, { passive: true });
+window.addEventListener("resize", resizeSlideshow);
 
 function resizeSlideshow() {  
-    var scrolltotop = document.scrollingElement.scrollTop;
     var target = document.getElementById("slideshow");
+    if (!target) {
+        return;
+    }
+
+    var scrolltotop = document.scrollingElement ? document.scrollingElement.scrollTop : window.scrollY;
    
     var elt_width = target.offsetWidth;
     var elt_height = target.offsetHeight;

@@ -1,15 +1,19 @@
-/* Toggle between adding and removing the "responsive" class to topnav when 
-the user clicks on the icon */
-
+/* Toggle responsive navigation for the mobile menu button. */
 function myFunction() {
-    var x = document.getElementById("buttons");
-    if (x.className === "") {
-      x.className += "responsive";
-    } else {
-      x.className = "";
+    var nav = document.getElementById("buttons");
+    var toggle = document.getElementById("mobile-menu-toggle");
+
+    if (!nav) {
+        return;
+    }
+
+    var isOpen = nav.classList.toggle("responsive");
+    if (toggle) {
+        toggle.setAttribute("aria-expanded", String(isOpen));
     }
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+var mobileToggle = document.getElementById("mobile-menu-toggle");
+if (mobileToggle) {
+    mobileToggle.addEventListener("click", myFunction);
 }

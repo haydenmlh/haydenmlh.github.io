@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
 
         <!-- Fonts and CSS -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/navbar.css">
         
@@ -16,26 +17,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 
         <!-- Title and Default Metadata -->
-        <title>Hayden Mak - A Computer Scientist &amp; Developer</title>
-        <meta property="title" content="Hayden Mak - A Computer Scientist &amp; Developer" />
-        <meta property="description" content="Learn about Hayden Mak. What does he do all day? Find out through the projects page!" />
+        <title>Hayden Mak | Projects</title>
+        <meta name="description" content="Explore Hayden Mak's software projects, design choices, and technical implementations." />
+        <meta property="title" content="Hayden Mak | Projects" />
+        <meta property="description" content="Explore Hayden Mak's software projects, design choices, and technical implementations." />
+        <link rel="canonical" href="https://haydenmlh.github.io/projects.html" />
         <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico"/>
 
         <!-- OpenGraph - Required Fields -->
-        <meta property="og:title" content="Hayden Mak - A Computer Scientist &amp; Developer" />
-        <meta property="og:description" content="Learn about Hayden Mak. What does he do all day? Find out through the projects page!" />
+        <meta property="og:title" content="Hayden Mak | Projects" />
+        <meta property="og:description" content="Explore Hayden Mak's software projects, design choices, and technical implementations." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/me_1.jpg" />
-        <meta property="og:url" content="https://haydenmlh.github.io/projects" />
+        <meta property="og:url" content="https://haydenmlh.github.io/projects.html" />
 
         <!-- OpenGraph - Optional Fields -->
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:title" content="Hayden Mak - A Computer Scientist &amp; Developer">
-        <meta property="twitter:description" content="Learn about Hayden Mak. What does he do all day? Find out through the projects page!">
+        <meta property="twitter:title" content="Hayden Mak | Projects">
+        <meta property="twitter:description" content="Explore Hayden Mak's software projects, design choices, and technical implementations.">
         <meta property="twitter:image" content="/images/me_1.jpg">
-        <meta property="twitter:url" content="https://haydenmlh.github.io/projects">
+        <meta property="twitter:url" content="https://haydenmlh.github.io/projects.html">
 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,25 +63,25 @@
                     <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
 
                     <!-- Mobile menu icon -->
-                    <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <button type="button" class="nav-link icon" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="buttons">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
 
                     <div id="header-left" class="header-flanks">
-                        <a class="nav-link" href="/resume" id="about-link">Resume</a></li>
-                        <a class="nav-link" href="/projects" id="projects-link" >Projects</a></li>
+                        <a class="nav-link" href="/resume.html" id="about-link">Resume</a>
+                        <a class="nav-link" href="/projects.html" id="projects-link" >Projects</a>
                         
                     </div>
 
                     <div id="header-right" class="header-flanks">
-                        <a class="nav-link" href="https://www.instagram.com/haydenmlh.photography" id="photography-link">Photography</a></li>
-                        <a class="nav-link" href="/contact" id="contact-link">Contact</a></li>
+                        <a class="nav-link" href="https://www.instagram.com/haydenmlh.photography" id="photography-link">Photography</a>
+                        <a class="nav-link" href="/contact.html" id="contact-link">Contact</a>
                     </div>
 
-                    <a class="nav-link mobile" href="/about" id="about-link-mobile">About</a></li>
-                    <a class="nav-link mobile" href="/projects" id="projects-link-mobile" >Projects</a></li>
-                    <a class="nav-link mobile" href="https://www.instagram.com/haydenmlh.photography" id="photography-link-mobile">Photography</a></li>                    
-                    <a class="nav-link mobile" href="/contact" id="contact-link-mobile">Contact</a></li>
+                    <a class="nav-link mobile" href="/resume.html" id="about-link-mobile">Resume</a>
+                    <a class="nav-link mobile" href="/projects.html" id="projects-link-mobile" >Projects</a>
+                    <a class="nav-link mobile" href="https://www.instagram.com/haydenmlh.photography" id="photography-link-mobile">Photography</a>
+                    <a class="nav-link mobile" href="/contact.html" id="contact-link-mobile">Contact</a>
                     <div class="mobile" id="responsive-bottom-border-mobile"></div>
 
                 </nav>
@@ -96,7 +99,7 @@
                     <div class="tile">
                         <a href="https://devpost.com/software/schmart" class="tile-link">
                             <div class="img-wrapper">
-                                <img class="tile-content" src="/images/projects/schmart_app.jpg">
+                                <img class="tile-content" src="/images/projects/schmart_app.jpg" alt="Schmart App screenshot" loading="lazy" decoding="async">
                                 <p class="tile-title noselect">Schmart App</p>
                                 <p class="tile-lang noselect">Language: React Native (Typescript), Python (Flask) 
                                     <br> Hack the Valley - Overall 1st Prize</p>
@@ -118,9 +121,9 @@
                     </div>
 
                     <div class="tile">
-                        <a href="/projects/personal_website" class="tile-link">
+                        <a href="/projects/personal_website.html" class="tile-link">
                             <div class="img-wrapper">
-                                <img class="tile-content" src="/images/projects/website_screenshot.jpg">
+                                <img class="tile-content" src="/images/projects/website_screenshot.jpg" alt="Personal website screenshot" loading="lazy" decoding="async">
                                 <p class="tile-title noselect">My Personal Website</p>
                                 <p class="tile-lang noselect">Language: HTML, CSS, Javascript</p>
                                 <div class="tile-description noselect">
@@ -143,7 +146,7 @@
 
                     <div class="tile">
                         <div class="img-wrapper">
-                            <img class="tile-content" src="/images/projects/doodlejump_screenshot.png">
+                            <img class="tile-content" src="/images/projects/doodlejump_screenshot.png" alt="Doodle Jump clone screenshot" loading="lazy" decoding="async">
                             <p class="tile-title noselect">Doodle Jump clone</p>
                             <p class="tile-lang noselect">Language: MIPS Assembly</p>
                             <div class="tile-description noselect">
@@ -163,7 +166,7 @@
 
                     <div class="tile">
                         <div class="img-wrapper">
-                            <img class="tile-content" src="/images/projects/transit_simulator.jpg">
+                            <img class="tile-content" src="/images/projects/transit_simulator.jpg" alt="Transit System Simulator screenshot" loading="lazy" decoding="async">
                             <p class="tile-title noselect">Transit System Simulator</p>
                             <p class="tile-lang noselect">Language: MIPS Assembly</p>
                             <div class="tile-description noselect">
@@ -194,8 +197,6 @@
         </footer>
     </body>
         
-    <!-- Load jquery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Load the scripts -->
     <script src="/scripts/navbar.js" defer></script>
     <script src="/scripts/content_header_scroll.js" defer></script>

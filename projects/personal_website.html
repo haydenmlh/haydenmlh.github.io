@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
 
         <!-- Fonts and CSS -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Open+Sans&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/navbar.css">
         <link rel="stylesheet" href="/styles/projects/personal_website.css">
@@ -19,23 +19,25 @@
         <!-- Title and Default Metadata -->
         <title>Hayden Mak - Personal Website Inspiration and Process</title>
         <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico"/>
+        <meta name="description" content="Design notes and implementation details behind Hayden Mak's personal website." />
         <meta property="title" content="Hayden Mak - Personal Website Design Inspiration and Process" />
-        <meta property="description" content="Learn about how this website was designed, and what inspired it! Find out here!" />
+        <meta property="description" content="Design notes and implementation details behind Hayden Mak's personal website." />
+        <link rel="canonical" href="https://haydenmlh.github.io/projects/personal_website.html" />
         
         <!-- OpenGraph - Required Fields -->
         <meta property="og:title" content="Hayden Mak - Personal Website Design Inspiration and Process" />
-        <meta property="og:description" content="Learn about how this website was designed, and what inspired it! Find out here!" />
+        <meta property="og:description" content="Design notes and implementation details behind Hayden Mak's personal website." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/projects/website_screenshot.jpg" />
-        <meta property="og:url" content="https://haydenmlh.github.io/projects/personal_website" />
+        <meta property="og:url" content="https://haydenmlh.github.io/projects/personal_website.html" />
 
         <!-- OpenGraph - Optional Fields -->
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://haydenmlh.github.io/projects/personal_website">
+        <meta property="twitter:url" content="https://haydenmlh.github.io/projects/personal_website.html">
         <meta property="twitter:title" content="Hayden Mak - Personal Website Design Inspiration and Process">
-        <meta property="twitter:description" content="Learn about how this website was designed, and what inspired it! Find out here!">
+        <meta property="twitter:description" content="Design notes and implementation details behind Hayden Mak's personal website.">
         <meta property="twitter:image" content="/images/projects/website_screenshot.jpg">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -54,25 +56,23 @@
             <header class="noselect">
                 <nav id="buttons">
                     <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
-                    <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <button type="button" class="nav-link icon" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="buttons">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
                     <div id="header-left" class="header-flanks">
-                        <a class="nav-link" href="/about" id="about-link">About</a></li>
-                        <a class="nav-link" href="/projects" id="projects-link" >Projects</a></li>
-                        <a class="nav-link" href="/blog" id="blog-link">Blog</a></li>
+                        <a class="nav-link" href="/resume.html" id="about-link">Resume</a>
+                        <a class="nav-link" href="/projects.html" id="projects-link" >Projects</a>
                         
                     </div>
                     <div id="header-right" class="header-flanks">
-                        <a class="nav-link" href="/photography" id="photography-link">Photography</a></li>
-                        <a class="nav-link" href="/contact" id="contact-link">Contact</a></li>
+                        <a class="nav-link" href="https://www.instagram.com/haydenmlh.photography" id="photography-link">Photography</a>
+                        <a class="nav-link" href="/contact.html" id="contact-link">Contact</a>
                     </div>
 
-                    <a class="nav-link mobile" href="/about" id="about-link-mobile">About</a></li>
-                    <a class="nav-link mobile" href="/projects" id="projects-link-mobile" >Projects</a></li>
-                    <a class="nav-link mobile" href="/blog" id="blog-link-mobile">Blog</a></li>
-                    <a class="nav-link mobile" href="/photography" id="photography-link-mobile">Photography</a></li>                    
-                    <a class="nav-link mobile" href="/contact" id="contact-link-mobile">Contact</a></li>
+                    <a class="nav-link mobile" href="/resume.html" id="about-link-mobile">Resume</a>
+                    <a class="nav-link mobile" href="/projects.html" id="projects-link-mobile" >Projects</a>
+                    <a class="nav-link mobile" href="https://www.instagram.com/haydenmlh.photography" id="photography-link-mobile">Photography</a>
+                    <a class="nav-link mobile" href="/contact.html" id="contact-link-mobile">Contact</a>
                     <div class="mobile" id="responsive-bottom-border-mobile"></div>
 
                 </nav>
@@ -90,7 +90,7 @@
                     <p id="process-title" class="paragraph-title">Initial Progress</p>
                     <p id="content-first-paragraph">
                         <div id="color-scheme">
-                            <img src="/images/projects/personal_website/color_scheme.jpg">
+                            <img src="/images/projects/personal_website/color_scheme.jpg" alt="Color scheme inspiration" loading="lazy" decoding="async">
                             <div class="img-caption">- Elegant and <br>Sophisticated <br> Color Scheme</div>
                         </div>
                         The primary purpose of my personal website is to showcase my programming projects and photography.
@@ -103,7 +103,7 @@
                     </p>
                     <p id="content-second-paragraph">
                         <div id="initial-website">
-                            <img id="initial-website-img" src="/images/projects/personal_website/initial_design.jpg">
+                            <img id="initial-website-img" src="/images/projects/personal_website/initial_design.jpg" alt="Initial personal website design" loading="lazy" decoding="async">
                             <div class="img-caption">- Initial prototype of personal website</div>
                         </div>
                         I then proceeded to
@@ -136,7 +136,7 @@
 
                     <p id="content-fourth-paragraph">
                         <div id="constructive-criticism">
-                            <img id="constructive-criticsm-img" src="/images/projects/personal_website/constructive_criticsm.png">
+                            <img id="constructive-criticsm-img" src="/images/projects/personal_website/constructive_criticsm.png" alt="Constructive criticism notes" loading="lazy" decoding="async">
                             <div class="img-caption">- Constructive criticism was very useful for my design process</div>
                         </div>
                         Through coding this website, I have learned that seeking constructive criticism is very
@@ -168,8 +168,6 @@
         </footer>
     </body>
 
-    <!-- Load jquery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Load the scripts -->
     <script src="/scripts/navbar.js" defer></script> 
     <script src="/scripts/content_header_scroll.js" defer></script>

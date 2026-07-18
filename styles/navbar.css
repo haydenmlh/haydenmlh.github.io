@@ -172,6 +172,13 @@
         -moz-transition:color .1s ease-in-out;
         -o-transition:color .1s ease-in-out;
         -webkit-transition:color .1s ease-in-out;
+        transition: color .1s ease-in-out;
+    }
+
+    nav button.nav-link {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
     }
 
     nav .nav-link:hover {
@@ -282,7 +289,7 @@
         grid-area: about;
         display: block;
     }
-    nav.responsive  a.icon {
+    nav.responsive .icon {
         grid-area: icon;
     }
     nav.responsive #projects-link-mobile {
