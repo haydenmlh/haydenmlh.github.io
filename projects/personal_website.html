@@ -1,176 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="HandheldFriendly" content="true">
 
-        <!-- Fonts and CSS -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Open+Sans&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/styles/navbar.css">
-        <link rel="stylesheet" href="/styles/projects/personal_website.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
 
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+    <!-- Fonts and CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Open+Sans&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/projects/personal_website.css">
 
-        <!-- Title and Default Metadata -->
-        <title>Hayden Mak - Personal Website Inspiration and Process</title>
-        <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico"/>
-        <meta property="title" content="Hayden Mak - Personal Website Design Inspiration and Process" />
-        <meta property="description" content="Learn about how this website was designed, and what inspired it! Find out here!" />
-        
-        <!-- OpenGraph - Required Fields -->
-        <meta property="og:title" content="Hayden Mak - Personal Website Design Inspiration and Process" />
-        <meta property="og:description" content="Learn about how this website was designed, and what inspired it! Find out here!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/projects/website_screenshot.jpg" />
-        <meta property="og:url" content="https://haydenmlh.github.io/projects/personal_website" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- OpenGraph - Optional Fields -->
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://haydenmlh.github.io/projects/personal_website">
-        <meta property="twitter:title" content="Hayden Mak - Personal Website Design Inspiration and Process">
-        <meta property="twitter:description" content="Learn about how this website was designed, and what inspired it! Find out here!">
-        <meta property="twitter:image" content="/images/projects/website_screenshot.jpg">
+    <!-- Title and Default Metadata -->
+    <title>Hayden Mak - Personal Website Inspiration and Process</title>
+    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico" />
+    <meta name="description" content="Design notes and implementation details behind Hayden Mak's personal website." />
+    <meta property="title" content="Hayden Mak - Personal Website Design Inspiration and Process" />
+    <meta property="description"
+        content="Design notes and implementation details behind Hayden Mak's personal website." />
+    <link rel="canonical" href="https://haydenmlh.github.io/projects/personal_website.html" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BLLSR9Y1W"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- OpenGraph - Required Fields -->
+    <meta property="og:title" content="Hayden Mak - Personal Website Design Inspiration and Process" />
+    <meta property="og:description"
+        content="Design notes and implementation details behind Hayden Mak's personal website." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/projects/website_screenshot.jpg" />
+    <meta property="og:url" content="https://haydenmlh.github.io/projects/personal_website.html" />
 
-            gtag('config', 'G-0BLLSR9Y1W');
-        </script>
+    <!-- OpenGraph - Optional Fields -->
 
-    </head>
-    <body id="body">
-        <div id="pre-footer">
-            <header class="noselect">
-                <nav id="buttons">
-                    <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a>
-                    <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <div id="header-left" class="header-flanks">
-                        <a class="nav-link" href="/about" id="about-link">About</a></li>
-                        <a class="nav-link" href="/projects" id="projects-link" >Projects</a></li>
-                        <a class="nav-link" href="/blog" id="blog-link">Blog</a></li>
-                        
-                    </div>
-                    <div id="header-right" class="header-flanks">
-                        <a class="nav-link" href="/photography" id="photography-link">Photography</a></li>
-                        <a class="nav-link" href="/contact" id="contact-link">Contact</a></li>
-                    </div>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://haydenmlh.github.io/projects/personal_website.html">
+    <meta property="twitter:title" content="Hayden Mak - Personal Website Design Inspiration and Process">
+    <meta property="twitter:description"
+        content="Design notes and implementation details behind Hayden Mak's personal website.">
+    <meta property="twitter:image" content="/images/projects/website_screenshot.jpg">
 
-                    <a class="nav-link mobile" href="/about" id="about-link-mobile">About</a></li>
-                    <a class="nav-link mobile" href="/projects" id="projects-link-mobile" >Projects</a></li>
-                    <a class="nav-link mobile" href="/blog" id="blog-link-mobile">Blog</a></li>
-                    <a class="nav-link mobile" href="/photography" id="photography-link-mobile">Photography</a></li>                    
-                    <a class="nav-link mobile" href="/contact" id="contact-link-mobile">Contact</a></li>
-                    <div class="mobile" id="responsive-bottom-border-mobile"></div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BLLSR9Y1W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                </nav>
-            </header>
+        gtag('config', 'G-0BLLSR9Y1W');
+    </script>
 
-            <div id="content">      
-                <div id="content-header-img" class="image-scroll">
-                    <div id="content-header-img-description">Personal Website Inspiration and Process</div>
-                    <div id="content-header-img-credits">
-                        Photo by <a href="https://unsplash.com/@jstrippa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Harrison</a> on <a href="https://unsplash.com/s/photos/programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                    </div>
-                </div>
-                <div class="back_to_projects"></div>
-                <div id="content-paragraph">
-                    <p id="process-title" class="paragraph-title">Initial Progress</p>
-                    <p id="content-first-paragraph">
-                        <div id="color-scheme">
-                            <img src="/images/projects/personal_website/color_scheme.jpg">
-                            <div class="img-caption">- Elegant and <br>Sophisticated <br> Color Scheme</div>
-                        </div>
-                        The primary purpose of my personal website is to showcase my programming projects and photography.
-                        To achieve this, I began the website design by splitting my navigation into several 
-                        subsections, namely Home, About, Projects, Photography, Blog and Contact. 
-                        After browsing <a href="https://www.canva.com/learn/website-color-schemes/">an article</a> on Canva
-                        about website color schemes, I decided to incorporate the 
-                        No.11 Elegant and Sophisticated colour scheme from the article for my website, as seen on the 
-                        right. I used the colors for the text on the website, as well as for some backgrounds behind the text.
-                    </p>
-                    <p id="content-second-paragraph">
-                        <div id="initial-website">
-                            <img id="initial-website-img" src="/images/projects/personal_website/initial_design.jpg">
-                            <div class="img-caption">- Initial prototype of personal website</div>
-                        </div>
-                        I then proceeded to
-                        design the navigation bar to make it responsive for mobile and desktop. 
-                        I learnt about how use media queries and how to set the appropriate metadata for mobile viewing. 
-                        I also resized
-                        different elements through CSS and Javascript to maneuver them into aesthetically
-                        pleasing layouts. The process involved a lot of using the latest CSS3 technologies including
-                        flex and grid display, as well as dynamic resizing based on viewport size using Javascript.
-                    </p>
+</head>
 
-                    <p id="inspiration-title" class="paragraph-title">Current Design Inspiration</p>
-
-                    <p id="content-third-paragraph">
-                        After seeking out constructive criticism of my first rough layout from close friends 
-                        (credits to <a href="https://github.com/loukos-scheffer">Loukos Scheffer</a>),
-                        I decided to change the look and 
-                        colors of the website from my colorful tabs format to a cleaner, more modern style. 
-                        I looked around at the current design language for personal websites using 
-                        <a href="https://www.themuse.com/advice/the-35-best-personal-websites-weve-ever-seen">this article</a> 
-                        from The Muse, and took inspiration from various personal websites from the article, including
-                        <a href="https://www.rhiannonnavin.com/">Rhiannon Navin's site</a>, 
-                        <a href="https://www.orestisgeorgiou.com/">Dr. Orestis Georgiou's site</a>, and 
-                        <a href="https://www.nathanielkoloc.com/">Nathaniel Koloc's site</a>.
-                        Drawing inspiration from these websites, I eventually settled on 
-                        minmalistic aesthetic for the colors and navigation bar.
-                    </p>
-
-                    <p id="inspiration-title" class="paragraph-title">Lessons Learnt</p>
-
-                    <p id="content-fourth-paragraph">
-                        <div id="constructive-criticism">
-                            <img id="constructive-criticsm-img" src="/images/projects/personal_website/constructive_criticsm.png">
-                            <div class="img-caption">- Constructive criticism was very useful for my design process</div>
-                        </div>
-                        Through coding this website, I have learned that seeking constructive criticism is very
-                        important in order to generate new ideas and inspiration. Before receiving my friend's opinion,
-                        I had the feeling that something was wrong with the layout but I was not able to pinpoint it 
-                        and determine what exactly was off. After discussing with my close friend, he was able to
-                        provide valuable input on the problems with the previous design, helping me form a broader
-                        view of the shortcomings of my website.
-                    </p>
-
-                    <p id="content-fifth-paragraph">
-                        I have also gained the understanding that front-end development requires a good
-                        eye for visuals and design. I will seek to improve my artistic ability by understanding 
-                        current industry
-                        practices, reading popular design blogs and most importantly, making my own projects to practice
-                        applying the knowledge I have gained from others.
-                    </p>
+<body id="body">
+    <div id="pre-footer">
+        <header class="noselect">
+            <nav id="buttons">
+                <a href="/" id="name-link">
+                    <h1 id="header-name">Hayden Mak</h1>
+                </a>
+                <button type="button" class="nav-link icon" id="mobile-menu-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="buttons">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div id="header-left" class="header-flanks">
+                    <a class="nav-link" href="/resume.html" id="about-link">Resume</a>
+                    <a class="nav-link" href="/projects.html" id="projects-link">Projects</a>
 
                 </div>
-                <div class="back_to_projects"></div>
+                <div id="header-right" class="header-flanks">
+                    <a class="nav-link" href="https://www.instagram.com/haydenm.photos"
+                        id="photography-link">Photography</a>
+                    <a class="nav-link" href="/contact.html" id="contact-link">Contact</a>
+                </div>
+
+                <a class="nav-link mobile" href="/resume.html" id="about-link-mobile">Resume</a>
+                <a class="nav-link mobile" href="/projects.html" id="projects-link-mobile">Projects</a>
+                <a class="nav-link mobile" href="https://www.instagram.com/haydenm.photos"
+                    id="photography-link-mobile">Photography</a>
+                <a class="nav-link mobile" href="/contact.html" id="contact-link-mobile">Contact</a>
+                <div class="mobile" id="responsive-bottom-border-mobile"></div>
+
+            </nav>
+        </header>
+
+        <div id="content">
+            <div id="content-header-img" class="image-scroll">
+                <div id="content-header-img-description">Personal Website Inspiration and Process</div>
+                <div id="content-header-img-credits">
+                    Photo by <a
+                        href="https://unsplash.com/@jstrippa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James
+                        Harrison</a> on <a
+                        href="https://unsplash.com/s/photos/programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </div>
             </div>
+            <div class="back_to_projects"></div>
+            <div id="content-paragraph">
+                <p id="process-title" class="paragraph-title">Initial Progress</p>
+                <p id="content-first-paragraph">
+                <div id="color-scheme">
+                    <img src="/images/projects/personal_website/color_scheme.jpg" alt="Color scheme inspiration"
+                        loading="lazy" decoding="async">
+                    <div class="img-caption">- Elegant and <br>Sophisticated <br> Color Scheme</div>
+                </div>
+                The primary purpose of my personal website is to showcase my programming projects and photography.
+                To achieve this, I began the website design by splitting my navigation into several
+                subsections, namely Home, About, Projects, Photography, Blog and Contact.
+                After browsing <a href="https://www.canva.com/learn/website-color-schemes/">an article</a> on Canva
+                about website color schemes, I decided to incorporate the
+                No.11 Elegant and Sophisticated colour scheme from the article for my website, as seen on the
+                right. I used the colors for the text on the website, as well as for some backgrounds behind the text.
+                </p>
+                <p id="content-second-paragraph">
+                <div id="initial-website">
+                    <img id="initial-website-img" src="/images/projects/personal_website/initial_design.jpg"
+                        alt="Initial personal website design" loading="lazy" decoding="async">
+                    <div class="img-caption">- Initial prototype of personal website</div>
+                </div>
+                I then proceeded to
+                design the navigation bar to make it responsive for mobile and desktop.
+                I learnt about how use media queries and how to set the appropriate metadata for mobile viewing.
+                I also resized
+                different elements through CSS and Javascript to maneuver them into aesthetically
+                pleasing layouts. The process involved a lot of using the latest CSS3 technologies including
+                flex and grid display, as well as dynamic resizing based on viewport size using Javascript.
+                </p>
+
+                <p id="inspiration-title" class="paragraph-title">Current Design Inspiration</p>
+
+                <p id="content-third-paragraph">
+                    After seeking out constructive criticism of my first rough layout from close friends
+                    (credits to <a href="https://github.com/loukos-scheffer">Loukos Scheffer</a>),
+                    I decided to change the look and
+                    colors of the website from my colorful tabs format to a cleaner, more modern style.
+                    I looked around at the current design language for personal websites using
+                    <a href="https://www.themuse.com/advice/the-35-best-personal-websites-weve-ever-seen">this
+                        article</a>
+                    from The Muse, and took inspiration from various personal websites from the article, including
+                    <a href="https://www.rhiannonnavin.com/">Rhiannon Navin's site</a>,
+                    <a href="https://www.orestisgeorgiou.com/">Dr. Orestis Georgiou's site</a>, and
+                    <a href="https://www.nathanielkoloc.com/">Nathaniel Koloc's site</a>.
+                    Drawing inspiration from these websites, I eventually settled on
+                    minmalistic aesthetic for the colors and navigation bar.
+                </p>
+
+                <p id="inspiration-title" class="paragraph-title">Lessons Learnt</p>
+
+                <p id="content-fourth-paragraph">
+                <div id="constructive-criticism">
+                    <img id="constructive-criticsm-img"
+                        src="/images/projects/personal_website/constructive_criticsm.png"
+                        alt="Constructive criticism notes" loading="lazy" decoding="async">
+                    <div class="img-caption">- Constructive criticism was very useful for my design process</div>
+                </div>
+                Through coding this website, I have learned that seeking constructive criticism is very
+                important in order to generate new ideas and inspiration. Before receiving my friend's opinion,
+                I had the feeling that something was wrong with the layout but I was not able to pinpoint it
+                and determine what exactly was off. After discussing with my close friend, he was able to
+                provide valuable input on the problems with the previous design, helping me form a broader
+                view of the shortcomings of my website.
+                </p>
+
+                <p id="content-fifth-paragraph">
+                    I have also gained the understanding that front-end development requires a good
+                    eye for visuals and design. I will seek to improve my artistic ability by understanding
+                    current industry
+                    practices, reading popular design blogs and most importantly, making my own projects to practice
+                    applying the knowledge I have gained from others.
+                </p>
+
+            </div>
+            <div class="back_to_projects"></div>
         </div>
+    </div>
 
-        <footer>
-            <p id="footer-contact">
-                Connect with Hayden on <a href="https://www.linkedin.com/in/haydenmlh/">LinkedIn</a> or <a href="https://github.com/haydenmlh">GitHub</a>!
-            </p>
-            <p id="footer-copyright"></p>
-        </footer>
-    </body>
+    <footer>
+        <p id="footer-contact">
+            Connect with Hayden on <a href="https://www.linkedin.com/in/haydenmlh/">LinkedIn</a> or <a
+                href="https://github.com/haydenmlh">GitHub</a>!
+        </p>
+        <p id="footer-copyright"></p>
+    </footer>
+</body>
 
-    <!-- Load jquery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Load the scripts -->
-    <script src="/scripts/navbar.js" defer></script> 
-    <script src="/scripts/content_header_scroll.js" defer></script>
+<!-- Load the scripts -->
+<script src="/scripts/navbar.js" defer></script>
+<script src="/scripts/content_header_scroll.js" defer></script>
+
 </html>

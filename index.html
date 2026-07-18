@@ -1,245 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="HandheldFriendly" content="true">
 
-        <!-- Fonts and CSS -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/styles/navbar.css">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/typewriter.css">
-        <link rel="stylesheet" href="/styles/slideshow.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
 
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+    <!-- Fonts and CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Fira+Sans+Condensed:wght@300&family=Source+Sans+Pro&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/typewriter.css">
+    <link rel="stylesheet" href="/styles/slideshow.css">
 
-        <!-- Title and Default Metadata -->
-        <title>Hayden Mak - A Computer Scientist &amp; Developer</title>
-        <meta property="title" content="Hayden Mak - A Computer Scientist &amp; Developer" />
-        <meta property="description" content="Learn about Hayden Mak. Who is this guy? Find out through his personal website!" />
-        <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico"/>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- OpenGraph - Required Fields -->
-        <meta property="og:title" content="Hayden Mak - A Computer Scientist &amp; Developer" />
-        <meta property="og:description" content="Learn about Hayden Mak. Who is this guy? Find out through his personal website!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/me_1.jpg" />
-        <meta property="og:url" content="https://haydenmlh.github.io" />
 
-        <!-- OpenGraph - Optional Fields -->
+    <!-- Title and Default Metadata -->
+    <title>Hayden Mak - A Computer Scientist &amp; Developer</title>
+    <meta name="description"
+        content="Portfolio of Hayden Mak, a software developer featuring projects, resume, and contact details." />
+    <meta property="title" content="Hayden Mak - A Computer Scientist &amp; Developer" />
+    <meta property="description"
+        content="Portfolio of Hayden Mak, a software developer featuring projects, resume, and contact details." />
+    <link rel="canonical" href="https://haydenmlh.github.io/index.html" />
+    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico" />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://haydenmlh.github.io">
-        <meta property="twitter:title" content="Hayden Mak - A Computer Scientist &amp; Developer">
-        <meta property="twitter:description" content="Learn about Hayden Mak. Who is this guy? Find out through his personal website!">
-        <meta property="twitter:image" content="/images/me_1.jpg">
+    <!-- OpenGraph - Required Fields -->
+    <meta property="og:title" content="Hayden Mak - A Computer Scientist &amp; Developer" />
+    <meta property="og:description"
+        content="Learn about Hayden Mak. Who is this guy? Find out through his personal website!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/me_1.jpg" />
+    <meta property="og:url" content="https://haydenmlh.github.io" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BLLSR9Y1W"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- OpenGraph - Optional Fields -->
 
-            gtag('config', 'G-0BLLSR9Y1W');
-        </script>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://haydenmlh.github.io">
+    <meta property="twitter:title" content="Hayden Mak - A Computer Scientist &amp; Developer">
+    <meta property="twitter:description"
+        content="Learn about Hayden Mak. Who is this guy? Find out through his personal website!">
+    <meta property="twitter:image" content="/images/me_1.jpg">
 
-    </head>
-    <body id="body">
-        <div id="pre-footer">
-            <header class="noselect">
-                <nav id="buttons">
-                    <!-- Typewriter title only on main page to avoid too much effects -->
-                    <a href="/" id="name-link"><h1 id="header-name" class="name-typewriter"></h1></a>
-                    
-                    <!-- No typing effect -->
-                    <!-- <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BLLSR9Y1W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                    <!-- Mobile menu icon -->
-                    <a href="javascript:void(0);" class="nav-link icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
+        gtag('config', 'G-0BLLSR9Y1W');
+    </script>
+
+</head>
+
+<body id="body">
+    <div id="pre-footer">
+        <header class="noselect">
+            <nav id="buttons">
+                <!-- Typewriter title only on main page to avoid too much effects -->
+                <a href="/" id="name-link">
+                    <h1 id="header-name" class="name-typewriter"></h1>
+                </a>
+
+                <!-- No typing effect -->
+                <!-- <a href="/" id="name-link"><h1 id="header-name">Hayden Mak</h1></a> -->
+
+                <!-- Mobile menu icon -->
+                <button type="button" class="nav-link icon" id="mobile-menu-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="buttons">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div id="header-left" class="header-flanks">
+                    <a class="nav-link" href="/resume.html" id="about-link">Resume</a>
+                    <a class="nav-link" href="/projects.html" id="projects-link">Projects</a>
+
+                </div>
+
+                <div id="header-right" class="header-flanks">
+                    <a class="nav-link" href="https://www.instagram.com/haydenm.photos"
+                        id="photography-link">Photography</a>
+                    <a class="nav-link" href="/contact.html" id="contact-link">Contact</a>
+                </div>
+
+                <a class="nav-link mobile" href="/resume.html" id="about-link-mobile">Resume</a>
+                <a class="nav-link mobile" href="/projects.html" id="projects-link-mobile">Projects</a>
+                <a class="nav-link mobile" href="https://www.instagram.com/haydenm.photos"
+                    id="photography-link-mobile">Photography</a>
+                <a class="nav-link mobile" href="/contact.html" id="contact-link-mobile">Contact</a>
+                <div class="mobile" id="responsive-bottom-border-mobile"></div>
+
+            </nav>
+        </header>
+
+
+        <div id="content">
+            <div id="main-intro">
+                <div id="main-intro-image-container" class="left-column">
+                    <div id="main-intro-image"></div>
+                </div>
+                <div class="main-text-div">
+                    <div class="intro-text">
+                        Hi, I'm Hayden. I'm a recent Graduate from the University of Toronto with a Honours Bachelor of
+                        Science majoring in Computer Science and Economics.
+                        I am actively looking for software development related positions and am actively upskilling to
+                        learn more about the latest technologies.
+                        In my free time, I enjoy playing table tennis, tennis and jogging.
+                    </div>
+                    <div class="intro-text">
+                        You can find my resume <a href="/resume.html">here</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div id="main-intro">
+                <div id="main-intro-image-container" class="left-column">
+                    <a href="/projects.html">
+                        <div id="main-projects-image"></div>
                     </a>
-
-                    <div id="header-left" class="header-flanks">
-                        <a class="nav-link" href="/resume" id="about-link">Resume</a></li>
-                        <a class="nav-link" href="/projects" id="projects-link" >Projects</a></li>
-                        
-                    </div>
-
-                    <div id="header-right" class="header-flanks">
-                        <a class="nav-link" href="https://www.instagram.com/haydenm.photos" id="photography-link">Photography</a></li>
-                        <a class="nav-link" href="/contact" id="contact-link">Contact</a></li>
-                    </div>
-
-                    <a class="nav-link mobile" href="/about" id="about-link-mobile">About</a></li>
-                    <a class="nav-link mobile" href="/projects" id="projects-link-mobile" >Projects</a></li>
-                    <a class="nav-link mobile" href="https://www.instagram.com/haydenm.photos" id="photography-link-mobile">Photography</a></li>                    
-                    <a class="nav-link mobile" href="/contact" id="contact-link-mobile">Contact</a></li>
-                    <div class="mobile" id="responsive-bottom-border-mobile"></div>
-
-                </nav>
-            </header>
-            
-
-            <div id="content">            
-                <div id="main-intro">
-                    <div id="main-intro-image-container" class="left-column">
-                        <div id="main-intro-image"></div>
-                    </div>
-                    <div class="main-text-div">
-                        <div class="intro-text"> 
-                            Hi, I'm Hayden. I'm a recent Graduate from the University of Toronto with a Honours Bachelor of Science majoring in Computer Science and Economics.
-                            I am actively looking for software development related positions and am actively upskilling to learn more about the latest technologies.
-                            In my free time, I enjoy playing table tennis, tennis and jogging.
-                        </div>
-                        <div class="intro-text">
-                            You can find my resume <a href="/resume">here</a>.
-                        </div>
-                    </div>
                 </div>
-                
-                <div id="main-intro">
-                    <div id="main-intro-image-container" class="left-column">
-                        <a href="/projects"><div id="main-projects-image"></div></a>
+                <div class="main-text-div">
+
+                    <div class="project-div">
+                        <div class="project-title-div">
+                            <div class="project-title-left-div">
+                                <p class="project-title"><b>Recipe Book</b></p>
+                                <p class="project-frameworks">Frameworks: React, Django, SQLite</p>
+                            </div>
+                            <div class="project-title-left-div">
+                                <p class="project-links"><a
+                                        href="https://github.com/haydenmlh/Smart-Grocery-Map-and-Inventory">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-image-div">
+                            <!-- <img src="" class="project-img" alt="project-image"> -->
+                        </div>
+                        <p class="project-description">
+                            I worked with a team of three using Agile methodology to create recipe sharing website
+                            I developed extensive REST API using Django and SQLite and cross-platform front-end using
+                            Flutter
+                            I designed the frontend using React and custom Bootstrap elements and created the recipe
+                            creation template
+
+                        </p>
                     </div>
-                    <div class="main-text-div">
 
-                        <div class="project-div"> 
-                            <div class="project-title-div">
-                                <div class="project-title-left-div">
-                                    <p class="project-title"><b>Recipe Book</b></p>
-                                    <p class="project-frameworks">Frameworks: React, Django, SQLite</p>
-                                </div>
-                                <div class="project-title-left-div">
-                                    <p class="project-links"><a href="https://github.com/haydenmlh/Smart-Grocery-Map-and-Inventory">GitHub</a></p>
-                                </div>
-                            </div>
-                            <div class="project-image-div">
-                                <!-- <img src="" class="project-img" alt="project-image"> -->
-                            </div>
-                            <p class="project-description">
-                                I worked with a team of three using Agile methodology to create recipe sharing website
-                                I developed extensive REST API using Django and SQLite and cross-platform front-end using Flutter
-                                I designed the frontend using React and custom Bootstrap elements and created the recipe creation template
+                    <hr>
 
-                            </p>
+
+                    <div class="project-div">
+                        <div class="project-title-div">
+                            <div class="project-title-left-div">
+                                <p class="project-title"><b>Smart Grocery App</b></p>
+                                <p class="project-frameworks">Frameworks: Flutter, Django, SQLite</p>
+                            </div>
+                            <div class="project-title-left-div">
+                                <p class="project-links"><a
+                                        href="https://github.com/haydenmlh/Smart-Grocery-Map-and-Inventory">GitHub</a>
+                                </p>
+                            </div>
                         </div>
-
-                        <hr>
-
-
-                        <div class="project-div"> 
-                            <div class="project-title-div">
-                                <div class="project-title-left-div">
-                                    <p class="project-title"><b>Smart Grocery App</b></p>
-                                    <p class="project-frameworks">Frameworks: Flutter, Django, SQLite</p>
-                                </div>
-                                <div class="project-title-left-div">
-                                    <p class="project-links"><a href="https://github.com/haydenmlh/Smart-Grocery-Map-and-Inventory">GitHub</a></p>
-                                </div>
-                            </div>
-                            <div class="project-image-div">
-                                <!-- <img src="" class="project-img" alt="project-image"> -->
-                            </div>
-                            <p class="project-description">
-                                I worked with a team of seven using Agile methodology to create an app to simplify grocery shopping. We Developed extensive REST API using Django and SQLite and cross-platform front-end using Flutter.
-                                I contributed to the backend routing through the store, user registration and authentication, and frontend for mapping and displaying store inventory to the customer.
-                                Our team used story point estimation using Fibonacci and scrum poker method.
-                                I coordinated and ran twice a week standups, biweekly sprints and sprint retrospectives for the four sprints.
-
-                            </p>
+                        <div class="project-image-div">
+                            <!-- <img src="" class="project-img" alt="project-image"> -->
                         </div>
+                        <p class="project-description">
+                            I worked with a team of seven using Agile methodology to create an app to simplify grocery
+                            shopping. We Developed extensive REST API using Django and SQLite and cross-platform
+                            front-end using Flutter.
+                            I contributed to the backend routing through the store, user registration and
+                            authentication, and frontend for mapping and displaying store inventory to the customer.
+                            Our team used story point estimation using Fibonacci and scrum poker method.
+                            I coordinated and ran twice a week standups, biweekly sprints and sprint retrospectives for
+                            the four sprints.
 
-                        <hr>
-
-                        <div class="project-div"> 
-                            <div class="project-title-div">
-                                <div class="project-title-left-div">
-                                    <p class="project-title"><b>CatchTheClimate App</b></p>
-                                    <p class="project-frameworks">Framework: React Native</p>
-                                </div>
-                                <div class="project-title-left-div">
-                                    <p class="project-links"><a href="https://github.com/haydenmlh/CatchTheClimate">GitHub</a></p>
-                                </div>
-                            </div>
-                            <div class="project-image-div">
-                                <!-- <img src="" class="project-img" alt="project-image"> -->
-                            </div>
-                            <p class="project-description">
-                                Developed a front-end React Native app which queries and displays weather data from OpenWeatherAPI
-                                Implemented search function by city or zip code and queried API based on input
-                                Shortened time to display data by 70% by using local storage to store the last-searched city and cache 
-                                weather data using react-native-mmkv-storage
-                            </p>
-                        </div>
-                        
-                        <hr>
-
-                        <div class="project-div"> 
-                            <div class="project-title-div">
-                                <div class="project-title-left-div">
-                                    <p class="project-title"><b>Schmart App | Hack The Valley 5 - 1st Place</b></p>
-                                    <p class="project-frameworks">Frameworks: React Native, Flask</p>
-                                </div>
-                                <div class="project-title-left-div">
-                                    <p class="project-links"><a href="https://github.com/Shmart-app">GitHub</a> | <a href="https://devpost.com/software/schmart">Devpost</a></p>
-                                </div>
-                            </div>
-                            <div class="project-image-div">
-                                <!-- <img src="" class="project-img" alt="project-image"> -->
-                            </div>
-                            <p class="project-description">
-                                Designed and implemented a barcode scanner which scanned objects and queried a nutrition API to obtain the nutritional information about the object and dynamically updated a chart
-                                Worked on the user registration and login authentication in the frontend using React Native and backend using Flask, creating a system to register and log in
-
-                            </p>
-                        </div>
-
-
-
-                        <hr>
-                        <a href="/projects">More Projects</a>
+                        </p>
                     </div>
+
+                    <hr>
+
+                    <div class="project-div">
+                        <div class="project-title-div">
+                            <div class="project-title-left-div">
+                                <p class="project-title"><b>CatchTheClimate App</b></p>
+                                <p class="project-frameworks">Framework: React Native</p>
+                            </div>
+                            <div class="project-title-left-div">
+                                <p class="project-links"><a
+                                        href="https://github.com/haydenmlh/CatchTheClimate">GitHub</a></p>
+                            </div>
+                        </div>
+                        <div class="project-image-div">
+                            <!-- <img src="" class="project-img" alt="project-image"> -->
+                        </div>
+                        <p class="project-description">
+                            Developed a front-end React Native app which queries and displays weather data from
+                            OpenWeatherAPI
+                            Implemented search function by city or zip code and queried API based on input
+                            Shortened time to display data by 70% by using local storage to store the last-searched city
+                            and cache
+                            weather data using react-native-mmkv-storage
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="project-div">
+                        <div class="project-title-div">
+                            <div class="project-title-left-div">
+                                <p class="project-title"><b>Schmart App | Hack The Valley 5 - 1st Place</b></p>
+                                <p class="project-frameworks">Frameworks: React Native, Flask</p>
+                            </div>
+                            <div class="project-title-left-div">
+                                <p class="project-links"><a href="https://github.com/Shmart-app">GitHub</a> | <a
+                                        href="https://devpost.com/software/schmart">Devpost</a></p>
+                            </div>
+                        </div>
+                        <div class="project-image-div">
+                            <!-- <img src="" class="project-img" alt="project-image"> -->
+                        </div>
+                        <p class="project-description">
+                            Designed and implemented a barcode scanner which scanned objects and queried a nutrition API
+                            to obtain the nutritional information about the object and dynamically updated a chart
+                            Worked on the user registration and login authentication in the frontend using React Native
+                            and backend using Flask, creating a system to register and log in
+
+                        </p>
+                    </div>
+
+
+
+                    <hr>
+                    <a href="/projects.html">More Projects</a>
                 </div>
+            </div>
 
-                <div id="main-intro">
-                    <div id="main-intro-image-container" class="left-column">
-                        <div id="main-photo-image"></div>
+            <div id="main-intro">
+                <div id="main-intro-image-container" class="left-column">
+                    <div id="main-photo-image"></div>
+                </div>
+                <div class="main-text-div">
+                    <div id="main-intro-text-p1">
+                        I enjoy taking photographs from time to time as a hobby. To see some of my photos, you can check
+                        out my Instagram page, <a href="https://www.instagram.com/haydenm.photos">@haydenm.photos</a>.
                     </div>
-                    <div class="main-text-div">
-                        <div id="main-intro-text-p1"> 
-                            I enjoy taking photographs from time to time as a hobby. To see some of my photos, you can check out my Instagram page, <a href="https://www.instagram.com/haydenm.photos">@haydenmlh.photography</a>.
-                        </div>
-                        <div id="main-intro-text-p2" class="indent">
-                            
-                        </div>
+                    <div id="main-intro-text-p2" class="indent">
+
                     </div>
                 </div>
             </div>
         </div>
-        <div id="preload-01"></div>
-        <div id="preload-02"></div>
-        <div id="preload-03"></div>
-        <footer>
-            <p id="footer-contact">
-                Connect with Hayden on <a href="https://www.linkedin.com/in/haydenmlh/">LinkedIn</a> or <a href="https://github.com/haydenmlh">GitHub</a>!
-            </p>
-            <p id="footer-copyright"></p>
-        </footer>
-        <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-        <script> window.start.init({Palette:"palette2",Mode:"banner bottom",Theme:"classic",Time:"2",})</script>
-    </body>
+    </div>
+    <div id="preload-01"></div>
+    <div id="preload-02"></div>
+    <div id="preload-03"></div>
+    <footer>
+        <p id="footer-contact">
+            Connect with Hayden on <a href="https://www.linkedin.com/in/haydenmlh/">LinkedIn</a> or <a
+                href="https://github.com/haydenmlh">GitHub</a>!
+        </p>
+        <p id="footer-copyright"></p>
+    </footer>
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({ Palette: "palette2", Mode: "banner bottom", Theme: "classic", Time: "2", })</script>
+</body>
 
-    <!-- Load jquery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Load the scripts -->
-    <script src="/scripts/main.js" defer></script>
-    <script src="/scripts/navbar.js" defer></script>
-    <script src="/scripts/typewriter.js" defer></script>
+<!-- Load the scripts -->
+<script src="/scripts/main.js" defer></script>
+<script src="/scripts/navbar.js" defer></script>
+<script src="/scripts/typewriter.js" defer></script>
+
 </html>

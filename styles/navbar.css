@@ -1,13 +1,21 @@
-@media (min-width: 50px) {     /* for general stylings (all screens) */
+@media (min-width: 50px) {
+
+    /* for general stylings (all screens) */
     .noselect {
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Old versions of Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+        /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     }
-    
+
     body {
         background-image: url("/images/background.png");
         margin: 0;
@@ -18,9 +26,11 @@
         align-items: center;
         min-height: 100vh;
         width: 100%;
-        overflow-x: hidden;  /* Hides horizontal scrollbar*/
+        overflow-x: hidden;
+        /* Hides horizontal scrollbar*/
         color: #1d2731;
     }
+
     a {
         color: #1d2731;
     }
@@ -34,7 +44,8 @@
     }
 
     #content {
-        min-height: calc(100vh - 100px - 55px); /* header, footer, padding */
+        min-height: calc(100vh - 100px - 55px);
+        /* header, footer, padding */
         background: white;
         width: 100%;
         padding: 0;
@@ -49,7 +60,7 @@
         max-height: 600px;
         background-repeat: no-repeat;
         background-size: auto;
-        position: relative;        
+        position: relative;
         margin: 0 0 15px 0;
     }
 
@@ -89,12 +100,13 @@
         text-align: center;
         white-space: nowrap;
     }
+
     /* End soon to be deprecated title */
 
     footer {
         height: 100%;
         flex-shrink: 0;
-        width: 100%; 
+        width: 100%;
         background: white;
         display: flex;
         flex-direction: column;
@@ -108,10 +120,12 @@
     #footer-contact {
         margin: 10px 0 2px 0;
     }
+
     #footer-copyright {
         font-size: 0.9em;
         margin: 0 0 5px 0;
-    }    
+    }
+
     #footer-copyright::after {
         content: "Copyright © Hayden Mak 2024";
     }
@@ -129,7 +143,7 @@
     nav {
         width: min(100%, 580px);
         height: 31px;
-        margin:0;
+        margin: 0;
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -144,7 +158,7 @@
         width: auto;
     }
 
-    
+
 
     nav #header-name {
         font-family: 'Nanum Gothic', sans-serif;
@@ -162,16 +176,24 @@
 
     nav .nav-link {
         color: #1d2731;
-        text-decoration: none; /* No underline for links */
+        text-decoration: none;
+        /* No underline for links */
         padding: 8px 15px 4px 15px;
         border-width: 0;
         margin: 0 3px 0 0;
         font-family: 'Fira Sans Condensed', sans-serif;
         flex-shrink: 0;
         overflow: hidden;
-        -moz-transition:color .1s ease-in-out;
-        -o-transition:color .1s ease-in-out;
-        -webkit-transition:color .1s ease-in-out;
+        -moz-transition: color .1s ease-in-out;
+        -o-transition: color .1s ease-in-out;
+        -webkit-transition: color .1s ease-in-out;
+        transition: color .1s ease-in-out;
+    }
+
+    nav button.nav-link {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
     }
 
     nav .nav-link:hover {
@@ -187,25 +209,27 @@
     }
 
     nav #home-link {
-        display: none; 
+        display: none;
     }
 
     nav .mobile {
         display: none;
     }
+
     /* Header CSS end */
 
-    
 
-    
 
-} 
+
+
+}
 
 /* Mobile CSS */
 
 @media (max-width: 579px) {
     #content {
-        min-height: calc(100vh - 50px - 55px - 30px); /* header, footer, padding */
+        min-height: calc(100vh - 50px - 55px - 30px);
+        /* header, footer, padding */
         background: white;
     }
 
@@ -213,10 +237,12 @@
         width: min(96%, 579px);
         margin: 0 2%;
     }
+
     #title {
         margin: 0;
         padding: 0 0 20px 0;
     }
+
     #title-text {
         margin: 0;
         padding: 0;
@@ -247,18 +273,18 @@
         width: 14px;
     }
 
-    nav .current{
+    nav .current {
         order: 2;
     }
 
-    nav #name-link{
+    nav #name-link {
         order: 3;
         display: block;
         margin-left: auto;
         flex-shrink: 1;
         padding: 15.5px 15px 15.5px 0;
     }
-    
+
     /* responsive change */
     nav.responsive {
         display: grid;
@@ -266,7 +292,7 @@
         grid-template-rows: 50px 31px 31px 31px 31px 31px 3px;
         width: 100%;
         height: 208px;
-        grid-template-areas: 
+        grid-template-areas:
             "icon name name"
             "about about about"
             "projects projects projects"
@@ -274,30 +300,36 @@
             "contact contact contact"
             "line line line";
     }
+
     nav.responsive #name-link {
         grid-area: name;
         display: block;
     }
+
     nav.responsive #about-link-mobile {
         grid-area: about;
         display: block;
     }
-    nav.responsive  a.icon {
+
+    nav.responsive .icon {
         grid-area: icon;
     }
+
     nav.responsive #projects-link-mobile {
         grid-area: projects;
-        display:block;
+        display: block;
     }
+
     nav.responsive #photography-link-mobile {
         grid-area: photos;
-        display:block;
+        display: block;
     }
-    
+
     nav.responsive #contact-link-mobile {
         grid-area: contact;
-        display:block;
+        display: block;
     }
+
     nav.responsive #responsive-bottom-border-mobile {
         display: block;
         background: #d9b310;
@@ -305,13 +337,14 @@
         width: 100%;
         height: 3px;
     }
+
     /* Responsive Change end */
     /* Header CSS */
 }
 
 /* Desktop CSS */
 
-@media (min-width: 580px) { 
+@media (min-width: 580px) {
     p {
         font-size: 16px;
         margin: 0 2.5%;
@@ -324,20 +357,21 @@
     }
 
     #content {
-        width: clamp(calc(580px - 4%), 100%, 1200px);  /* minus 2% (padding) each side  */
+        width: clamp(calc(580px - 4%), 100%, 1200px);
+        /* minus 2% (padding) each side  */
     }
 
     footer {
         width: clamp(580px, 100%, 1200px);
     }
-    
+
     /* Header CSS */
     nav {
         width: clamp(580px, 100%, 1200px);
         padding: 0;
         height: 100px;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;
     }
 
     nav #name-link {
@@ -355,7 +389,7 @@
         margin-left: 2.5%;
     }
 
-    nav #header-right{
+    nav #header-right {
         order: 3;
         margin-right: 2.5%;
     }
@@ -369,6 +403,7 @@
     nav .nav-link {
         padding: 0 5px;
     }
+
     /* Header CSS End */
 }
 
