@@ -1,2 +1,4 @@
 html/template.html
 .vscode/*
+node_modules/
+dist/

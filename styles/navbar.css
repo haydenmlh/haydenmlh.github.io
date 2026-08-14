@@ -31,6 +31,14 @@
         color: #1d2731;
     }
 
+    #root {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     a {
         color: #1d2731;
     }
@@ -119,15 +127,7 @@
 
     #footer-contact {
         margin: 10px 0 2px 0;
-    }
-
-    #footer-copyright {
-        font-size: 0.9em;
-        margin: 0 0 5px 0;
-    }
-
-    #footer-copyright::after {
-        content: "Copyright © Hayden Mak 2024";
+        padding-bottom: 12px;
     }
 
     /* Header CSS  - 31px tall */
@@ -234,8 +234,8 @@
     }
 
     footer {
-        width: min(96%, 579px);
-        margin: 0 2%;
+        width: 100%;
+        margin: 0;
     }
 
     #title {
@@ -356,18 +356,14 @@
         margin: 15px 0 20px 2.5%;
     }
 
-    #content {
-        width: clamp(calc(580px - 4%), 100%, 1200px);
-        /* minus 2% (padding) each side  */
-    }
-
-    footer {
-        width: clamp(580px, 100%, 1200px);
+    #content,
+    footer,
+    nav {
+        width: min(100%, 1200px);
     }
 
     /* Header CSS */
     nav {
-        width: clamp(580px, 100%, 1200px);
         padding: 0;
         height: 100px;
         justify-content: space-between;

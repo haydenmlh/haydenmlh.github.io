@@ -4,15 +4,37 @@
         background: white;
     }
 
-    #main-intro {
+    .home-section {
+        width: min(100%, 1200px);
+        margin: 18px 0;
+        border: 1px solid #d7e0ea;
+        border-radius: 12px;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        box-shadow: 0 8px 22px rgba(11, 60, 93, 0.08);
+        overflow: hidden;
+    }
+
+    .home-section-title {
+        margin: 0;
+        padding: 14px 18px;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #0b3c5d;
+        border-bottom: 1px solid #d7e0ea;
+        background: linear-gradient(90deg, #eaf4fb 0%, #f9fcff 100%);
+    }
+
+    .main-intro {
         display: flex;
         justify-content: center;
         align-items: center;
-        height:max-content;
-        padding: 0 0 30px 0;
+        height: max-content;
+        padding: 22px 18px;
     }
 
-    #main-intro-image-container {
+    .main-intro-image-container {
         padding: 0 15px 0 0;
     }
 
@@ -43,8 +65,10 @@
     .main-text-div {
         width: calc(100% - 180px - 30px);
         padding: 20px 15px 20px 15px;
-        border-left: 1px solid #0b3c5d;
+        border-left: 2px solid #d9b310;
         font-size: 16px;
+        background: #ffffff;
+        border-radius: 10px;
     }
     
     .indent{
@@ -60,18 +84,69 @@
     }
 
     hr {
-        color: #0b3c5d;
+        color: #c8d6e5;
         border-top-style: solid;
+        margin: 4px 0;
     }
 
     .project-div {
-        padding: 15px 0 15px 0;
+        padding: 12px 0;
     }
 
     .project-title-div {
-        display:flex;
-        justify-content:space-between;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: flex-start;
         margin: 0 0 5px 0;
+    }
+
+    .project-title {
+        color: #0b3c5d;
+    }
+
+    .project-frameworks {
+        color: #516273;
+        font-size: 14px;
+    }
+
+    .project-links {
+        white-space: nowrap;
+    }
+
+    .project-links a {
+        color: #0b3c5d;
+        text-decoration: none;
+        border-bottom: 1px solid #0b3c5d;
+        transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+
+    .project-links a:hover {
+        color: #328cc1;
+        border-color: #328cc1;
+    }
+
+    .project-description {
+        margin-top: 8px;
+        color: #253341;
+        line-height: 1.45;
+    }
+
+    .main-cta-link {
+        display: inline-block;
+        margin: 12px 0 0 0;
+        padding: 8px 14px;
+        border-radius: 999px;
+        text-decoration: none;
+        color: #0b3c5d;
+        border: 1px solid #0b3c5d;
+        background: #f4f9fd;
+        transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+    }
+
+    .main-cta-link:hover {
+        background: #0b3c5d;
+        color: #ffffff;
     }
 
     .project-image-div {
@@ -85,17 +160,30 @@
 @media (max-width: 579px) { 
     
 
-    #main-intro {
+    .home-section {
+        margin: 10px 0;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .home-section-title {
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+
+    .main-intro {
         display: flex;
         flex-direction: column;
+        padding: 16px 10px 20px 10px;
     }
     
     .main-text-div {
         width: calc(100% - 20px);
-        padding: 20px 0;
+        padding: 16px 10px;
         margin: 20px 0 0 0;
-        border-style: none;
-        border-top: 1px solid #0b3c5d;
+        border-left: none;
+        border-top: 2px solid #d9b310;
     }
 
     #main-intro-image {
@@ -116,8 +204,17 @@
 
     .project-div {
         width: calc(100% - 20px);
-        padding: 20px 0;
+        padding: 14px 0;
         border-style: none;
+    }
+
+    .project-title-div {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .project-links {
+        white-space: normal;
     }
 
     #main-photo-image {
@@ -132,8 +229,8 @@
 /* Desktop CSS */
 @media (min-width: 580px) { 
 
-    #main-intro {
-        width: clamp(calc(580px - 4%), 100%, 1000px);  /* minus 2% (padding)  */
+    .main-intro {
+        width: 100%;
     }
 
 }
