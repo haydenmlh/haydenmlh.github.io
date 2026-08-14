@@ -1,31 +1,27 @@
 /* General CSS - All screens */
-@media (min-width: 50px) {     
+@media (min-width: 50px) {
     #title {
         padding: 0px;
         margin-top: 0px;
     }
+
     #content-header-img {
         background-image: url("/images/page_headers/about.jpg");
     }
+
     #about-resume {
         width: 96%;
         max-width: 1200px;
-        height: clamp(800px, calc(100vh - 100px - 55px - 30px),2000px);
+        height: clamp(800px, calc(100vh - 100px - 55px - 30px), 2000px);
         margin-top: 15px;
     }
 }
 
 /* Mobile CSS */
-@media (max-width: 579px) { 
-
-} 
+@media (max-width: 579px) {}
 
 /* Desktop CSS */
-@media (min-width: 580px) { 
-
-}
+@media (min-width: 580px) {}
 
 /* Max Width Desktop CSS */
-@media (min-width: 1200px) { 
-
-}
+@media (min-width: 1200px) {}

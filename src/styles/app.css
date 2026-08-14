@@ -1,31 +1,32 @@
 @import "tailwindcss";
 
 @layer base {
-	html,
-	body,
-	#root {
-		min-height: 100%;
-	}
 
-	body {
-		margin: 0;
-		background-color: #f8fbff;
-		color: #1d2731;
-		font-family: "Source Sans Pro", sans-serif;
-	}
+    html,
+    body,
+    #root {
+        min-height: 100%;
+    }
 
-	a {
-		color: #0b3c5d;
-	}
+    body {
+        margin: 0;
+        background-color: #f8fbff;
+        color: #1d2731;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+
+    a {
+        color: #0b3c5d;
+    }
 }
 
 @layer utilities {
-	.noselect {
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 }

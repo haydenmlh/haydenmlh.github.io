@@ -1,5 +1,5 @@
 /* General CSS - All screens */
-@media (min-width: 50px) {   
+@media (min-width: 50px) {
     #content {
         background: white;
     }
@@ -70,8 +70,8 @@
         background: #ffffff;
         border-radius: 10px;
     }
-    
-    .indent{
+
+    .indent {
         text-indent: 1.5em;
     }
 
@@ -79,7 +79,9 @@
         margin: 0.5em 0;
     }
 
-    h1, h2, p {
+    h1,
+    h2,
+    p {
         margin: 0;
     }
 
@@ -150,15 +152,15 @@
     }
 
     .project-image-div {
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
     }
-    
+
 }
 
 /* Mobile CSS */
-@media (max-width: 579px) { 
-    
+@media (max-width: 579px) {
+
 
     .home-section {
         margin: 10px 0;
@@ -177,7 +179,7 @@
         flex-direction: column;
         padding: 16px 10px 20px 10px;
     }
-    
+
     .main-text-div {
         width: calc(100% - 20px);
         padding: 16px 10px;
@@ -224,10 +226,10 @@
         background-image: url("/images/photos.png");
         background-size: contain;
     }
-} 
+}
 
 /* Desktop CSS */
-@media (min-width: 580px) { 
+@media (min-width: 580px) {
 
     .main-intro {
         width: 100%;
@@ -236,6 +238,4 @@
 }
 
 /* Max Width Desktop CSS */
-@media (min-width: 1200px) { 
-
-}
+@media (min-width: 1200px) {}
