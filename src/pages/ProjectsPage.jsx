@@ -29,7 +29,7 @@ export default function ProjectsPage() {
                                 <p className="tile-lang noselect text-sm text-slate-600">Language: React Native (Typescript), Python (Flask) <br /> Hack the Valley - Overall 1st Prize</p>
                                 <div className="tile-description noselect mt-2 text-[15px] text-slate-700">
                                     <p className="tile-description-paragraph">
-                                    As a team of four, we created a smart grocery shopping app which helped users meet their health and environmental goals. It displays the health information of food dynamically as food is added to the shopping cart. It also uses a machine learning algorithm to recommend foods based on previous purchase history.
+                                        As a team of four, we created a smart grocery shopping app which helped users meet their health and environmental goals. It displays the health information of food dynamically as food is added to the shopping cart. It also uses a machine learning algorithm to recommend foods based on previous purchase history.
                                     </p>
                                     <p className="tile-description-paragraph">Click this tile to learn more about our design process and inspiration!</p>
                                     <div className="tile-date mt-2 text-right text-sm text-slate-500">Project date: October 2021</div>
@@ -48,7 +48,7 @@ export default function ProjectsPage() {
                                 <p className="tile-lang noselect text-sm text-slate-600">Language: HTML, CSS, Javascript</p>
                                 <div className="tile-description noselect mt-2 text-[15px] text-slate-700">
                                     <p className="tile-description-paragraph">
-                                    This is my first medium-scale self-directed project outside coursework. I learned a lot more about foundational web development basics by applying HTML, CSS and Javascript to construct the website.
+                                        This is my first medium-scale self-directed project outside coursework. I learned a lot more about foundational web development basics by applying HTML, CSS and Javascript to construct the website.
                                     </p>
                                     <p className="tile-description-paragraph">Click this tile to learn more about my design process and inspiration!</p>
                                     <div className="tile-date mt-2 text-right text-sm text-slate-500">Project date: June 2021 - Present</div>
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
                             <p className="tile-lang noselect text-sm text-slate-600">Language: MIPS Assembly</p>
                             <div className="tile-description noselect mt-2 text-[15px] text-slate-700">
                                 <p className="tile-description-paragraph">
-                                For CSC258, we implemented a Doodle Jump clone in MIPS Assembly in a team of two. We built a score system, diminishing platform sizes and score-based messages.
+                                    For CSC258, we implemented a Doodle Jump clone in MIPS Assembly in a team of two. We built a score system, diminishing platform sizes and score-based messages.
                                 </p>
                                 <div className="tile-date mt-2 text-right text-sm text-slate-500">Project date: March 2021 - April 2021</div>
                             </div>
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
                             <p className="tile-lang noselect text-sm text-slate-600">Language: MIPS Assembly</p>
                             <div className="tile-description noselect mt-2 text-[15px] text-slate-700">
                                 <p className="tile-description-paragraph">
-                                For CSC207, we implemented a command-line transit fare simulator with account balance checks, line/station management, and team Scrum workflow.
+                                    For CSC207, we implemented a command-line transit fare simulator with account balance checks, line/station management, and team Scrum workflow.
                                 </p>
                                 <div className="tile-date mt-2 text-right text-sm text-slate-500">Project date: November 2020 - December 2020</div>
                             </div>
